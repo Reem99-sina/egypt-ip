@@ -1,0 +1,23 @@
+export default {
+  termsOfUse: "سياسة الاستخدام",
+  aboutThePlatform: "عن المنصة",
+  intellectualPropertyMarket: "سوق الملكية الفكرية",
+  tradingPlatform: "منصة التداول",
+  termsAndConditions: "الشروط والأحكام",
+  cancellation: "إلغاء",
+  en: "اللغة الانحليزية",
+  ar: "اللغة العربية",
+  search: "البحث",
+  addFiles: "أضف ملفاتك الداعمة",
+  filesSupport: "الملفات الداعمة",
+  minSizefile: "الحجم الأقصى للملف",
+  download: "تحميل",
+  number: "رقم",
+  deleteAll: "حذف الكل",
+  doneLoad: "اكتمل التحميل",
+  supportingAttachment: "مرفقات داعمة",
+  supportFiles: "اضف ملفاتك الداعمة",
+  showesone: "اختر الصور المراد عرضها",
+  browseFiles: "استعراض الملفات",
+
+} as const;
