@@ -1,7 +1,6 @@
 import React, { RefObject, forwardRef, useState } from "react";
 import clsx from "clsx";
 import { Drawer, DrawerRef } from "@/components/shared/drawer.component";
-import { Line } from "@/components/shared/line.component";
 import Link from "next/link";
 import { useTranslation } from "@/translations/clients";
 import { useUser } from "@/hooks/useUser";
@@ -13,10 +12,9 @@ import {
   FaUser,
   CgCloseR,
   IoIosArrowDown,
-  MdOutlineLanguage,
   CiSettings,
   IoMdAdd,
-  IoIosLogIn
+  IoIosLogIn,
 } from "@/icon";
 
 interface Props {
@@ -40,7 +38,7 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
       children,
       placement = "left",
       width = 300,
-      Footer,
+      // Footer,
       TopLeftComponent,
     },
     ref
@@ -48,12 +46,12 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
     const { logout } = useAuth();
 
     const { user, isLoadingUser } = useUser();
-    const { changeLanguage, lang } = useTranslation();
-    const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+    const { changeLanguage, lang, t } = useTranslation();
+    // const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
-    const toggleLangMenu = () => {
-      setIsLangMenuOpen(!isLangMenuOpen);
-    };
+    // const toggleLangMenu = () => {
+    //   setIsLangMenuOpen(!isLangMenuOpen);
+    // };
     const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
     const toggleProfileMenu = () => {
       setIsProfileMenuOpen(!isProfileMenuOpen);
@@ -64,18 +62,18 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
 
     return (
       <Drawer ref={ref} width={width} placement={placement}>
-        <div className=" h-screen w-full   bg-secondary2 ">
+        <div className=" h-screen w-full   bg-bodyColor ">
           <div className="flex justify-between justify-items-start py-4 pe-3 ps-4 ">
             {/* <Link href={`/${lang}/`}>
               <SmallFullWhiteLogoIcon />
               logo
             </Link> */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-end w-full">
               {TopLeftComponent ? (
                 TopLeftComponent
               ) : (
                 <CgCloseR
-                  className="mr-4  cursor-pointer "
+                  className="mr-4 cursor-pointer w-6 h-6"
                   onClick={() => {
                     (
                       ref as React.MutableRefObject<DrawerRef> | null
@@ -83,19 +81,9 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
                   }}
                 />
               )}
-              <div>
-                <div>
-                  <div className="flex  cursor-pointer items-center gap-2 rounded-none ">
-                    <MdOutlineLanguage
-                      stroke={"white"}
-                      onClick={toggleLangMenu}
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          {isLangMenuOpen && (
+          {/* {isLangMenuOpen && (
             <div className="-mt-[40px] mb-[8px] me-[6px] ms-[150px] flex w-fit flex-col gap-y-2   self-end rounded bg-white p-2">
               <div className="flex items-center ">
                 <span onClick={() => changeLanguage("ar")}>
@@ -114,8 +102,7 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
                 </span>
               </div>
             </div>
-          )}
-          <Line />
+          )} */}
 
           {user ? (
             <div className="  flex flex-1 flex-col overflow-y-scroll bg-secondary2 scrollbar-hide ">
@@ -230,21 +217,37 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
                 }}
                 className="relative ms-6 flex  h-10 w-32 flex-row rounded bg-primary px-4 py-1 text-sm"
               >
-                <span className=" absolute  top-2 mr-1 flex text-white">
-                  تسجيل الدخول
+                <span className=" absolute  top-2 mr-1 flex ">
+                  {t("login")}
                 </span>
               </button>
-             
             </div>
           )}
-          <div className=" mb-44  ms-8 bg-secondary2 text-white">
+          <div className=" mb-44  ms-8  ">
             {children}
-          </div>
 
-          <Line />
+            <div className="flex items-center gap-3 ">
+              <p
+                className={clsx(
+                  lang == "en" ? "font-black text-base underline" : "",
+                  "cursor-pointer"
+                )}
+                onClick={() => changeLanguage("en")}
+              >
+                {t("en")}
+              </p>
 
-          <div className=":p-6 mx-8  bg-secondary2 py-3">
-            {Footer && Footer}
+              <p className="ml-2 mr-2 text-[#7B8494] ">|</p>
+              <p
+                className={clsx(
+                  lang == "ar" ? "font-black text-base underline" : "",
+                  "cursor-pointer"
+                )}
+                onClick={() => changeLanguage("ar")}
+              >
+                {t("ar")}
+              </p>
+            </div>
           </div>
         </div>
       </Drawer>

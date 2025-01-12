@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --bodyColor:"#f1f5f9"
+  --bodyColor: "#f1f5f9"
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,4 +19,18 @@ body {
   color: var(--background);
   background: var(--bodyColor);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #000, #2a71f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head-gradient {
+  background: linear-gradient(180deg, #000, #000a2d, #001354 80%, #002f6c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

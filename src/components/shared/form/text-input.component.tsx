@@ -78,11 +78,11 @@ export const TextInput: FC<Props> = ({
           }}
           className={clsx(
             disabled ? "bg-bg3" : "bg-white",
-            "block min-h-[40px]  w-full  p-2.5 text-sm font-black text-secondary3 py-0",
+            "block min-h-[40px]  w-full  p-2.5 text-sm font-black text-describeColor py-0",
             `border ${
               errorMessage ? "border-error" : "border-[#E2E2E2]"
             } rounded-md `,
-            "placeholder:!text-xs placeholder:!font-light",
+            "placeholder:!text-xs placeholder:!font-light placeholder:!text-describeColor",
             `${
               className ? className : "rounded-lg  px-4"
             } focus-visible:outline-0`

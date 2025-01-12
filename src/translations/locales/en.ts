@@ -1,7 +1,7 @@
 export default {
   termsOfUse: "Terms of Use",
-  aboutThePlatform: "About the platform",
-  intellectualPropertyMarket: "Intellectual Property Market",
+  aboutThePlatform: "About",
+  intellectualPropertyMarket: "market place",
   tradingPlatform: "Trading Platform",
   termsAndConditions: "Terms and Conditions",
   privacyPolicy: "Privacy Policy",
@@ -20,5 +20,25 @@ export default {
   supportFiles: "Add your supporting files",
   showesone: "Select the images to display.",
   browseFiles: "Browse files",
-
+  login: "Login",
+  logout: "Logout",
+  use_email_or_phone: "You can use your email or Username",
+  id_or_email: "Username /  email",
+  errorLoginUserName: "Username cannot be empty.",
+  errorLoginemail: "Please enter a valid email address.",
+  password: "Password",
+  errorPasswordNotEmty: "Password cannot be empty.",
+  errorPasswordPattern:
+    "Password must meet complexity requirements: 8+ characters, including uppercase, lowercase, number, and  special character",
+  dontHaveAccount: "Don't have account",
+  forgetPassword: "Forget password",
+  allRight: "All rights reserved © 2025",
+  register: "Sign up",
+  alreadyHaveAccount: "Already have account",
+  home:"Home",
+  applicationForm:"Application Form",
+  faq:"FAQ",
+  header:"Egyptian Intellectual Property Portal",
+  desc:"Protecting Creativity and Innovation in Egypt",
+  apply:"Apply"
 } as const;

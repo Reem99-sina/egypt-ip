@@ -9,11 +9,19 @@ export const colors = {
   bg3: '#F7F7F7',
   siderBarColor: '#7B8080',
   thColor: '#595959',
-  greenCustom: '#1F7A49',
   bg1: '#F4F6F9',
   yellowDark:"#f1d12a",
   headerColor:"#f0fdfa",
   footerColor:"#2c333e",
   bodyColor:"#f1f5f9",
-  bottomColor:"#1c4c9f"
+  blueCustom1:"#1c4c9f",
+  textMain:"#374151",
+  describeColor:'#64748b',
+  greenCustom:"#60baa7",
+  blueCustom2:"#2a71f0",
+  bgColor1:"#f1f5f9",
+  grayColor1:"#f0f0f0",
+  greenCustom2:"#82b8a1",
+  grayColor2:"#DCDFE4",
+  descText:"#010D3E"
 };

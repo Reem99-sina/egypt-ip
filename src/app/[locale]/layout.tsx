@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "@/app/globals.css";
+import React from "react";
 import { Providers } from "../providers";
-import { Header } from "@/components/layout/layout/header";
-import { Footer } from "@/components/layout/layout/footer.component";
+import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata } from "next";
+import "@/app/globals.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,29 +33,11 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} >
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div
-          className={
-            "flex h-auto w-screen flex-col overflow-x-hidden min-h-screen"
-          }
-        >
-          <Providers locale={locale}>
-            <div className="flex w-full flex-col items-center bg-headerColor">
-              <div className="container overflow-hidden py-8 ">
-                <Header />
-              </div>
-            </div>
-
-            <div className="flex w-full flex-1 flex-col   justify-center bg-white h-screen">
-              {children}
-            </div>
-
-            <Footer />
-          </Providers>
-        </div>
+        <Providers locale={locale}>{children}</Providers>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ interface Props {
 export const Line: FC<Props> = ({ color }) => {
   return (
     <div
-      className={'h-[1px] w-full bg-gray-200'}
+      className={'h-[1px] w-full bg-textMain'}
       style={color ? { backgroundColor: color } : {}}
     />
   );

@@ -30,8 +30,10 @@ import { IoIosLogIn } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TbSquareCheck } from "react-icons/tb";
 import { TbSquareCheckFilled } from "react-icons/tb";
+import { FaWindowClose } from "react-icons/fa";
 
 export {
+  FaWindowClose,
   TbSquareCheckFilled,
   TbSquareCheck,
   MdEdit,

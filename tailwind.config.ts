@@ -49,7 +49,7 @@ const config: Config = {
             paddingLeft: '4rem',
           },
         },
-
+       
         '.container-lg': {
           width: '100%',
           paddingRight: '0.5rem' /* 8px */,

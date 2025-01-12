@@ -29,7 +29,7 @@ export const Button: FC<Props> = ({
         "text-md font-bold",
         "dark:bg-primary-dark dark:text-bg-dark dark:hover:bg-hover-dark",
         "hover:bg-blend-color-burn px-8 py-[15px]",
-        disabled && "bg-black bg-opacity-30",
+        disabled && "bg-bottomColor bg-opacity-30",
         className
       )}
       type={type}
