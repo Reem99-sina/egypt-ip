@@ -5,10 +5,12 @@ const ScrollAnimationExample = ({
   children,
   objectStart,
   objectEnd,
+  delay
 }: {
   children: ReactNode;
   objectStart?: Target;
   objectEnd?: Target;
+  delay?:number
 }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -26,6 +28,7 @@ const ScrollAnimationExample = ({
     <motion.div
       ref={ref}
       animate={controls}
+      transition={{duration:0.5,delay:delay}}
       initial={objectStart ? objectStart : { opacity: 0, y: 100 }}
       className="w-full"
     >

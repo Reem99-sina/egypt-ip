@@ -28,7 +28,7 @@ interface Props {
     onClick: () => void;
   };
   TopLeftComponent?: React.ReactNode;
-  modalRef: RefObject<ModalRef>;
+  modalRef: RefObject<ModalRef|null>;
 }
 
 export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(

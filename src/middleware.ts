@@ -4,7 +4,7 @@ import { config as appConfig } from '@/config';
 
 const I18nMiddleware = createI18nMiddleware({
   locales: [appConfig.DEFAULT_LOCALE, 'en'],
-  defaultLocale: appConfig.DEFAULT_LOCALE,
+  defaultLocale: "en",
   resolveLocaleFromRequest: () => appConfig.DEFAULT_LOCALE,
 });
 

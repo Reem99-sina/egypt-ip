@@ -41,7 +41,7 @@ export const FormDrawer = forwardRef<DrawerRef, Props>(
         <div className='flex h-screen w-full flex-col justify-between'>
           <div>
             <div className='flex justify-between py-4 pe-4 ps-12 sm:p-6'>
-              <span className='text-sm font-bold text-black'>{title}</span>
+              <span className='text-sm font-bold text-textMain'>{title}</span>
 
               {TopLeftComponent ? (
                 TopLeftComponent

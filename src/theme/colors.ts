@@ -23,5 +23,7 @@ export const colors = {
   grayColor1:"#f0f0f0",
   greenCustom2:"#82b8a1",
   grayColor2:"#DCDFE4",
-  descText:"#010D3E"
+  descText:"#010D3E",
+  descText2:"#000A2D",
+  greenCustom3:"#54b5a6"
 };

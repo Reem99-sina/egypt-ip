@@ -18,11 +18,11 @@ const SearchComponent = () => {
         </div>
         <Button
           className={clsx(
-            "absolute my-1  flex h-8  items-center  justify-center border-e border-strokeDark !p-0 !w-10 "
+            "absolute my-1  flex h-8  items-center  justify-center border-e border-blueCustom1 !p-0 !w-10 "
           )}
           text=""
           type="button"
-          startIcon={<CiSearch color="black" />}
+          startIcon={<CiSearch className="text-blueCustom1" />}
         />
       </div>
     </div>

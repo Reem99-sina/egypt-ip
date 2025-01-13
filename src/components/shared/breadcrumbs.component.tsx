@@ -22,7 +22,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
               {(isLastItem || !item.href) && !item.onClick ? (
                 <p
                   className={clsx(
-                    isLastItem ? 'text-black' : 'text-primeColor',
+                    isLastItem ? 'text-black' : 'text-blueCustom1',
                     'text-xs',
                   )}
                 >
@@ -33,7 +33,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
                   onClick={item.onClick}
                   className={clsx(
                     'cursor-pointer  text-xs hover:underline',
-                    isLastItem ? 'text-black ' : 'text-primeColor',
+                    isLastItem ? 'text-black ' : 'text-blueCustom1',
                   )}
                 >
                   {item.text}
@@ -43,7 +43,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
                   href={item.href ? item.href : ''}
                   className={clsx(
                     'text-xs  hover:underline',
-                    isLastItem ? 'text-black ' : 'text-primeColor',
+                    isLastItem ? 'text-black ' : 'text-blueCustom1',
                   )}
                 >
                   {item.text}
@@ -51,7 +51,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
               )}
 
               {!isLastItem && !isNextItemEmpty && (
-                <span className={clsx('mx-5 text-xs text-primeColor')}>/</span>
+                <span className={clsx('mx-5 text-xs text-blueCustom1')}>/</span>
               )}
             </div>
           );

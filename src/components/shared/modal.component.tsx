@@ -4,6 +4,7 @@ import React, { forwardRef, useImperativeHandle } from "react";
 import { Dialog } from "@material-tailwind/react";
 import type { DialogProps } from "@material-tailwind/react";
 import clsx from "clsx";
+import { propsMissing } from "@/utils/date.util";
 
 export interface ModalRef {
   open: () => void;
@@ -31,8 +32,7 @@ export const Modal = forwardRef<ModalRef, Props>(
         size={size}
         handler={() => setIsVisible(false)}
         className={clsx("border-0 focus:border-0", className)}
-        placeholder={undefined}
-      
+      {...propsMissing}
       >
         {isVisible ? children : null}
       </Dialog>

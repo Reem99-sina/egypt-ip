@@ -37,8 +37,54 @@ export default {
   home: "الرئيسية",
   applicationForm: "نموذج الطلب",
   faq: "الأسئلة الشائعة",
-  header: "بوابة الملكية الفكرية المصرية",
-  desc: "حماية الإبداع والابتكار في مصر",
-  apply:"يتقدم"
+  header: "أى خدمة؟",
+  desc: "وفر وقتك و استفد من خدمات مصر الرقمية فى دقائق معدودة",
+  apply: "يتقدم",
+  publicService: "أشهر الخدمات ",
+  socialWelfare: "التأمين الإجتماعى",
+  supply: "التموين",
+  myVehicles: "مركباتى",
+  cheap: "رخصى",
+  commercialRegister: "السجل التجاري",
+  documentation: "التوثيق",
+  courts: "المحاكم",
+  allGovernment: "كل الخدمات والبيانات الحكومية فى مكان واحد",
+  knowMore: "أريد معرفة المزيد عن..",
+  EgyptDigitalJustice: "عدالة مصر الرقمية",
+  EgyptDigitalJusticeDesc:
+    "خدمات متعلقة بالنواحي الجنائية والمدنية والاقتصادية والإدارية",
+  Facilities: "المرافق",
+  FacilitiesDesc: "خدمات متعلقة بالسكن كالكهرباء والمياة والغاز والصرف الصحى",
+  EducationAndUniversities: "التعليم و الجامعات",
+  EducationAndUniversitiesDesc:
+    "خدمات متعلقة بالتعليم العالى والجامعات وخدمات التنسيق والتعليم الإلكتروني وغيره",
+  socialProtection: "الحماية الاجتماعية",
+  socialProtectionDesc:
+    "خدمات متعلقة بالدعم الإجتماعى كالبرامج الإجتماعية والعلاج على نفقة الدولة والتمويل العقارى وغيرها",
+  Properties: "الملكيات",
+  PropertiesDesc: "خدمات متعلقة بالشهر العقارى والسجل العيني الزراعي والحضري",
+  civilServices: "الخدمات المدنية",
+  civilServicesDesc:
+    "خدمات متعلقة بالأحوال الشخصية والأحوال المدنية والتوثيق والمرور",
+  companiesAndEstablishments: "الشركات و المنشئآت",
+  companiesAndEstablishmentsDesc:
+    "خدمات متعلقة بالشركات والمشروعات الصغيرة والمتوسطة والتأمينات الإجتماعية",
+  travelAndRelocation: "السفر و الانتقال",
+
+  travelAndRelocationDesc: "خدمات متعلقة بالسفر الداخلى والخارجى",
+  About: "عن",
+  AboutDesc:
+    "قرَّبنا إليك كل ما تحتاج إليه، استخدم مصر الرقمية من جهازك الذكى أو محمولك وادفع بالطريقة التى تناسبك",
+  accountOpen: "افتح حساب أو سجِّل الدخول",
+  subscribeAccount:"اشترك وكن جزءاً من مصر الرقمية",
+  searchAllServices:"تصفح كل الخدمات",
+  searchAllServicesDes:"تصفح جميع خدمات مصر الرقمية الاَن",
+  Benefits:"فوائد",
+  benefitsDesc:"بوابة مصر الإلكترونية تقدم لك كل الخدمات الحكومية بطريقة فورية وسهلة وأنت فى مكانك!",
+  totalNumberOfRequest:"إجمالي عدد الطلبات على ديجيتال إيجيبت",
+  numberOfRequest:"عدد الطلبات أمس",
+  totalNumberOfUser:"إجمالي عدد مستخدمي ديجيتال إيجيبت",
+  numberNewUser:"عدد المستخدمين الجدد أمس",
+  privacyPolicy: "سياسة الخصوصية",
 
 } as const;

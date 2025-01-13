@@ -66,7 +66,7 @@ const LoginForm = () => {
         <div className="mb-2 mt-5 flex flex-col gap-y-3 w-full">
           <div className="flex w-full">
             <Button
-              className="w-full justify-center rounded bg-blueCustom1 !px-3 !py-2 !font-bold"
+              className="w-full justify-center rounded-full bg-blueCustom1 !px-3 !py-2 !font-bold hover:bg-greenCustom3"
               type="submit"
               text={t("login")}
               onClick={handleSubmit(onSubmit)}

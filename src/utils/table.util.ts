@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 /**
  * @param obj an object that needs to get the value out of it
  * @param accessor the accessor to get the value out of the object, format is: string.string.string

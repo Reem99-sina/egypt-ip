@@ -11,6 +11,7 @@ export { default as Password } from "./password.svg";
 export { default as ProfileUser } from "./user.svg";
 export { default as Vision } from "./vision.png";
 export { default as Mission } from "./mission.png";
+export { default as Line } from "./line.svg";
 import { FaRegBell } from "react-icons/fa";
 import {
   FaYoutube,

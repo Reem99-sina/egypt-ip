@@ -22,14 +22,19 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #000, #2a71f0);
+  background: linear-gradient(90deg, #1c4c9f 80%, #2a71f0);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.text-gradient-light {
+  background: linear-gradient(90deg, #2a71f0, #2a71f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .head-gradient {
-  background: linear-gradient(180deg, #000, #000a2d, #001354 80%, #002f6c);
+  background: linear-gradient(180deg, #009f, #000a2d, #001354 80%, #002f6c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

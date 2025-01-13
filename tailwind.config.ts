@@ -18,6 +18,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-shamel)', 'var(--font-codec)'],
+      }, boxShadow: {
+        'custom': 'rgba(237, 237, 255, 0.89) 1px 4px 77px 0px',
       },
     },
 

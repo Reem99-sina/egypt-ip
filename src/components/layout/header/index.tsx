@@ -19,6 +19,7 @@ import { MobileMenuDrawer } from "./mobile-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowDown, IoIosArrowUp } from "@/icon";
 import ScrollAnimationExample from "@/components/shared/animation-conponent";
+import { propsMissing } from "@/utils/date.util";
 
 export const Header = () => {
   const { t, lang } = useTranslation();
@@ -112,14 +113,14 @@ export const Header = () => {
                           </div>
                         </div>
                       </MenuHandler>
-                      <MenuList className="p-0">
+                      <MenuList className="p-0"{...propsMissing}>
                         {link.dropdownItems.map((item) => (
                           <Link
                             href={item.to}
                             key={item.id}
                             className="text-sm font-normal text-[#595959]"
                           >
-                            <MenuItem className="p-4">{item.text}</MenuItem>
+                            <MenuItem className="p-4"{...propsMissing}>{item.text}</MenuItem>
                           </Link>
                         ))}
                       </MenuList>

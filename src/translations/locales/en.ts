@@ -35,10 +35,57 @@ export default {
   allRight: "All rights reserved © 2025",
   register: "Sign up",
   alreadyHaveAccount: "Already have account",
-  home:"Home",
-  applicationForm:"Application Form",
-  faq:"FAQ",
-  header:"Egyptian Intellectual Property Portal",
-  desc:"Protecting Creativity and Innovation in Egypt",
-  apply:"Apply"
+  home: "Home",
+  applicationForm: "Application Form",
+  faq: "FAQ",
+  header: "What service?",
+  desc: "Save your time and benefit from Egypt's digital services in a few minutes",
+  apply: "Apply",
+  publicService: "Most Popular Services",
+  socialWelfare: "Social Welfare",
+  supply: "Supply",
+  myVehicles: "My vehicles",
+  cheap: "Cheap",
+  commercialRegister: "Commercial Register",
+  documentation: "Documentation",
+  courts: "Courts",
+  allGovernment: "All government services and data in one place",
+  knowMore: "I want to know more about..",
+  EgyptDigitalJustice: "Egypt Digital Justice",
+  EgyptDigitalJusticeDesc:
+    "Services related to criminal, civil, economic and administrative aspects",
+  Facilities: "Facilities",
+  FacilitiesDesc:
+    "Housing related services: electricity, water, gas and sewage",
+  EducationAndUniversities: "Education and Universities",
+  EducationAndUniversitiesDesc:
+    "Services related to higher education, universities, coordination services, e-learning, etc.",
+  socialProtection: "Social protection",
+  socialProtectionDesc:
+    "Services related to social support such as social programs, treatment at the state’s expense, real estate financing, etc.",
+  Properties: "Properties",
+  PropertiesDesc:
+    "Services related to real estate registration and agricultural and urban eye register",
+  civilServices: "Civil Services",
+  civilServicesDesc:
+    "Services related to personal status, civil status, documentation and traffic",
+  companiesAndEstablishments: "Companies and establishments",
+  companiesAndEstablishmentsDesc:
+    "Services related to companies, small and medium enterprises and social insurance",
+  travelAndRelocation: "Travel and relocation",
+  travelAndRelocationDesc:
+    "Services related to domestic and international travel",
+  About: "About",
+  AboutDesc:
+    "We bring everything you need closer to you, use Digital Egypt from your smart device or mobile and pay in the way that suits you",
+  accountOpen: "Open an account or log in",
+  subscribeAccount: "Subscribe and be part of Digital Egypt",
+  searchAllServices: "Browse all services",
+  searchAllServicesDes: "Browse all Egypt Digital services now",
+  Benefits:"Benefits",
+  benefitsDesc:"Egypt's electronic portal provides you with all government services in an immediate and easy way, while you are in your place!",
+  totalNumberOfRequest:"Total number of requests on Digital Egypt",
+  numberOfRequest:"Number of requests yesterday",
+  totalNumberOfUser:"Total number of users of Digital Egypt",
+  numberNewUser:"Number of new users yesterday"
 } as const;

@@ -1,6 +1,6 @@
 'use client';
 import clsx from 'clsx';
-import React, { FC, useState } from 'react';
+import React, { FC, JSX, useState } from 'react';
 
 interface Props {
   tabs: {

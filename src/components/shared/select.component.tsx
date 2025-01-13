@@ -1,6 +1,6 @@
 
 import clsx from 'clsx';
-import React from 'react';
+import React, { JSX } from 'react';
 import ReactSelect, { PropsValue, SingleValue } from 'react-select';
 
 interface Option {
@@ -39,7 +39,7 @@ export const Select: React.FC<Props> = ({
     <>
       {label ? (
         <div className='flex w-full flex-row items-center justify-between'>
-          <p className={clsx('text-sm font-bold ',error?"text-red-600":"text-black")}>{label}</p>
+          <p className={clsx('text-sm font-bold ',error?"text-red-600":"text-textMain")}>{label}</p>
           {icon ? <span>{icon}</span> : null}
         </div>
       ) : null}
