@@ -8,23 +8,27 @@ const AboutSection = () => {
   const { t } = useTranslation();
   const arrayAbout = [
     {
-      title: "45301132",
-      desc: t("totalNumberOfRequest"),
+      title: t("fosteringInnovation"),
+      desc: t("fosteringInnovationDesc"),
+      image:"/FosteringInnovation.png"
     },
     {
-      title: "5707",
-      desc: t("numberOfRequest"),
+      title: t("BuildingBridges"),
+      desc: t("BuildingBridgesDesc"),
+      image:"/BuildingBridges.jpg"
     },
     {
-      title: "7981913",
-      desc: t("totalNumberOfUser"),
+      title: t("EnhancingImpact"),
+      desc: t("EnhancingImpactDesc"),
+      image:"/enhancingImpact.jpg"
     },
     {
-      title: "3943",
-      desc: t("numberNewUser"),
+      title: t("PromotingSustainability"),
+      desc: t("PromotingSustainabilityDesc"),
+      image:"/PromotingSustainability.jpg"
     },
   ];
-  
+
   return (
     <section
       className="text-center container mx-auto bg-bodyColor pb-5 flex flex-col justify-center items-center"
@@ -32,7 +36,7 @@ const AboutSection = () => {
     >
       <HeaderSection title={t("About")} />
       <p className="head-gradient font-black text-[28px]">{t("AboutDesc")}</p>
-      <div className="my-8 flex justify-between items-center gap-6">
+      <div className="my-8 grid sm:grid-cols-4 gap-6 grid-cols-1">
         {arrayAbout?.map((ele, index) => (
           <ScrollAnimationExample
             objectStart={{
@@ -46,7 +50,7 @@ const AboutSection = () => {
             delay={index}
             key={index}
           >
-            <Card {...ele} />
+            <Card {...ele} className="gap-4 min-h-[130px] justify-between" img={ele.image}/>
           </ScrollAnimationExample>
         ))}
       </div>

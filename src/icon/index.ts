@@ -13,14 +13,18 @@ export { default as Vision } from "./vision.png";
 export { default as Mission } from "./mission.png";
 export { default as Line } from "./line.svg";
 import { FaRegBell } from "react-icons/fa";
+import { RiVoiceRecognitionLine } from "react-icons/ri";
+import { CgMediaPodcast } from "react-icons/cg";
+
 import {
+   FaMoneyBill ,
   FaYoutube,
   FaInstagram,
   FaTwitter,
   FaFacebookSquare,
 } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
-import { MdOutlineEmail, MdEdit } from "react-icons/md";
+import { MdOutlineEmail, MdEdit,MdOutlineConnectWithoutContact } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { CgCloseR } from "react-icons/cg";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -34,6 +38,7 @@ import { TbSquareCheckFilled } from "react-icons/tb";
 import { FaWindowClose } from "react-icons/fa";
 
 export {
+  RiVoiceRecognitionLine,
   FaWindowClose,
   TbSquareCheckFilled,
   TbSquareCheck,
@@ -54,4 +59,7 @@ export {
   FaFacebookSquare,
   IoLocation,
   MdOutlineEmail,
+  FaMoneyBill,
+  MdOutlineConnectWithoutContact,
+  CgMediaPodcast
 };

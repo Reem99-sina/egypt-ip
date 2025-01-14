@@ -6,10 +6,11 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <div
-      className={"flex h-auto max-w-screen flex-col overflow-x-hidden min-h-screen"}
+      className={
+        "flex h-auto max-w-screen flex-col overflow-x-hidden min-h-screen scroll-smooth relative"
+      }
     >
       <div className="flex-col bg-white min-h-screen flex justify-between">
         <div className="flex w-full flex-col items-center bg-headerColor">

@@ -39,7 +39,21 @@ export const PopularService = () => {
   const { t } = useTranslation();
 
   return [
-    { title: t("socialWelfare") },
+    {
+      title: t("socialWelfare"),
+      desc:
+        t("activateARation") +
+        " - " +
+        t("issuingAReplacement") +
+        " - " +
+        t("transferOne") +
+        " - " +
+        t("psychologicalSeparation") +
+        " - " +
+        t("IncludeMyFamily") +
+        " - " +
+        t("ExchangeInquiry"),
+    },
     { title: t("supply") },
     { title: t("myVehicles") },
     { title: t("cheap") },
@@ -69,10 +83,38 @@ export const Services = () => {
   ];
 };
 export const AboutData = () => {
-  const {t}=useTranslation()
-  
+  const { t } = useTranslation();
+
   return [
     { title: t("accountOpen"), desc: t("subscribeAccount") },
-    {  title: t("searchAllServices"), desc:t("searchAllServicesDes") },
+    { title: t("searchAllServices"), desc: t("searchAllServicesDes") },
+  ];
+};
+export const ServiceShow = () => {
+  const { t } = useTranslation();
+
+  return [
+    {
+      title: t("Researchers"),
+    },
+    {
+      title: t("Teams")
+    },
+    { title: t("Innovators") },
+
+  ];
+};
+export const Partners = () => {
+  const { t } = useTranslation();
+
+  return [
+    {
+      title: t("AcademicInstitutions"),
+      desc: t("AcademicInstitutionsDesc"),
+      image:"/aI.png"
+    },
+    { title: t("GovernmentBodies"), desc: t("GovernmentBodiesDesc"),image:"/goverment.png" },
+    { title: t("IndustryLeaders"), desc: t("IndustryLeadersDesc"),image:"/iL.avif" },
+    { title: t("InvestorsandVentCap"), desc: t("InvestorsandVentCapDesc") ,image:"/IVC.jpeg"},
   ];
 };

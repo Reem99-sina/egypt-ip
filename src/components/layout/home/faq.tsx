@@ -6,7 +6,6 @@ import {
 } from "@material-tailwind/react";
 import HeaderSection from "./headerSection";
 import { useState } from "react";
-import { propsMissing } from "@/utils/date.util";
 import { IoIosArrowUp, IoIosArrowDown } from "@/icon";
 import { Button } from "@/components/shared/button.component";
 import { useTranslation } from "@/translations/clients";
@@ -15,7 +14,7 @@ const Faq = () => {
   const [open, setOpen] = useState("");
   const { t } = useTranslation();
   const handleOpen = (value: string) => setOpen(open === value ? "" : value);
-  
+
   return (
     <section
       className=" container mx-auto bg-bodyColor pb-10 text-left flex flex-col items-center justify-center"
@@ -29,11 +28,9 @@ const Faq = () => {
         <Accordion
           open={"Why" == open}
           icon={"Why" == open ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          {...propsMissing}
         >
           <AccordionHeader
             onClick={() => handleOpen("Why")}
-            {...propsMissing}
             className="text-lg font-black text-descText"
           >
             Why might I be interested in the AI Assistive Tools Hackathon?

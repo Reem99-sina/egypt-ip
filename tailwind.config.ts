@@ -48,7 +48,7 @@ const config: Config = {
           '@screen xl': {
             maxWidth: '90%',
             paddingRight: '1rem',
-            paddingLeft: '4rem',
+            paddingLeft: '1rem',
           },
         },
        

@@ -1,17 +1,35 @@
 "use client";
-import {  FaUser } from "react-icons/fa";
+import {
+  RiVoiceRecognitionLine,
+  FaMoneyBill,
+  MdOutlineConnectWithoutContact,
+  CgMediaPodcast,
+} from "@/icon";
 import CardBenefits from "./card-benefits";
 import HeaderSection from "./headerSection";
 import ScrollAnimationExample from "@/components/shared/animation-conponent";
 import { useTranslation } from "@/translations/clients";
-import { RiAddLargeFill } from "react-icons/ri";
 
 export const AboutData = () => {
-  const {t}=useTranslation()
+  const { t } = useTranslation();
 
   return [
-    { img:  <RiAddLargeFill/>, title: t("accountOpen"), desc: t("subscribeAccount") },
-    { img: <FaUser/>, title: t("searchAllServices"), desc:t("searchAllServicesDes") },
+    {
+      img: <RiVoiceRecognitionLine />,
+      title: t("Recognition"),
+    },
+    {
+      img: <FaMoneyBill />,
+      title: t("Substantial"),
+    },
+    {
+      img: <MdOutlineConnectWithoutContact />,
+      title: t("Opportunities"),
+    },
+    {
+      img: <CgMediaPodcast />,
+      title: t("Media"),
+    },
   ];
 };
 
@@ -24,10 +42,11 @@ const BenefitsSection = () => {
       id="benefit"
     >
       <HeaderSection title={t("Benefits")} />
-      <h3 className="head-gradient font-black text-[28px] -mt-10">
+      <p className="head-gradient font-black text-[28px] -mt-5">
         {t("benefitsDesc")}
-      </h3>
-      <div className="flex items-center mt-8 gap-5">
+      </p>
+
+      <div className="grid grid-cols-1 mt-8 gap-5 sm:grid-cols-4">
         {AboutData()?.map((ele, index) =>
           index < AboutData().length - 1 ? (
             <ScrollAnimationExample
@@ -43,11 +62,7 @@ const BenefitsSection = () => {
               key={index + ele.title}
             >
               <div className="flex items-center justify-center">
-                <CardBenefits
-                  icon={ele.img}
-                  title={ele.title}
-                  body={ele.desc.slice(0, 100)}
-                />
+                <CardBenefits icon={ele.img} title={ele.title} />
                 <span className="mx-4 hidden lg:block">|</span>
               </div>
             </ScrollAnimationExample>
@@ -64,11 +79,7 @@ const BenefitsSection = () => {
               delay={index}
               key={index + ele.title}
             >
-              <CardBenefits
-                icon={ele.img}
-                title={ele.title}
-                body={ele.desc.slice(0, 100)}
-              />
+              <CardBenefits icon={ele.img} title={ele.title} />
             </ScrollAnimationExample>
           )
         )}

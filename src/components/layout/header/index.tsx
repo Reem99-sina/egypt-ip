@@ -19,7 +19,7 @@ import { MobileMenuDrawer } from "./mobile-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowDown, IoIosArrowUp } from "@/icon";
 import ScrollAnimationExample from "@/components/shared/animation-conponent";
-import { propsMissing } from "@/utils/date.util";
+import { linksdropdownProps } from "@/types/data.type";
 
 export const Header = () => {
   const { t, lang } = useTranslation();
@@ -30,7 +30,7 @@ export const Header = () => {
   const modalRef = useRef<ModalRef>(null);
   const drawerRef = useRef<DrawerRef>(null);
   const [openDropdownId, setOpenDropdownId] = useState<number | null>(null);
-  const links = useMemo(() => {
+  const links: linksdropdownProps[] = useMemo(() => {
     return [
       {
         id: 1,
@@ -44,25 +44,35 @@ export const Header = () => {
       },
       {
         id: 3,
-        text: t("applicationForm"),
-        to: "/#application",
+        text: t("eligibility"),
+        to: "/#",
       },
       {
         id: 4,
-        text: t("faq"),
-        to: "/#faq",
+        text: t("AwardCriteria"),
+        to: "/#",
       },
       {
         id: 5,
-        text: t("intellectualPropertyMarket"),
-        dropdownItems: [
-          {
-            id: 1,
-            text: t("tradingPlatform"),
-            to: "/",
-          },
-        ],
+        text: t("Domains"),
+        to: "/#",
       },
+      {
+        id: 6,
+        text: t("contactUs"),
+        to: "/#",
+      },
+      // {
+      //   id: 7,
+      //   text: t("intellectualPropertyMarket"),
+      //   dropdownItems: [
+      //     {
+      //       id: 1,
+      //       text: t("tradingPlatform"),
+      //       to: "/",
+      //     },
+      //   ],
+      // },
     ];
   }, []);
 
@@ -90,7 +100,7 @@ export const Header = () => {
             className={clsx(" invisible flex items-center gap-x-4 sm:visible")}
           >
             <div className="invisible flex flex-row  sm:visible gap-5">
-              {links.map((link) => (
+              {links?.map((link) => (
                 <div
                   key={link.id}
                   className="flex flex-row items-center font-sans "
@@ -113,24 +123,28 @@ export const Header = () => {
                           </div>
                         </div>
                       </MenuHandler>
-                      <MenuList className="p-0"{...propsMissing}>
+                      <MenuList className="p-0">
                         {link.dropdownItems.map((item) => (
                           <Link
                             href={item.to}
                             key={item.id}
                             className="text-sm font-normal text-[#595959]"
                           >
-                            <MenuItem className="p-4"{...propsMissing}>{item.text}</MenuItem>
+                            <MenuItem className="p-4">{item.text}</MenuItem>
                           </Link>
                         ))}
                       </MenuList>
                     </Menu>
                   ) : (
-                    <ScrollAnimationExample objectStart={{opacity:0}} objectEnd={{opacity:1}}>
+                    <ScrollAnimationExample
+                      objectStart={{ opacity: 0 }}
+                      objectEnd={{ opacity: 1 }}
+                    >
                       <Link
                         href={link.to as string}
                         className={clsx(
-                          "relative text-lg font-bold text-[#595959] "
+                          "relative text-lg font-bold text-[#595959] ",
+                          "scroll-smooth"
                         )}
                       >
                         {link.text}
@@ -209,7 +223,7 @@ export const Header = () => {
                     ) : (
                       <Link
                         onClick={() => drawerRef.current?.close()}
-                        href={link.to}
+                        href={link.to as string}
                       >
                         {link.text}
                       </Link>

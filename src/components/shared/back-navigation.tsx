@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from "@/translations/clients";
-import { propsMissing } from "@/utils/date.util";
 import { Button, Typography } from "@material-tailwind/react";
 import { useRouter } from "next/navigation";
 import * as React from "react";
@@ -19,7 +18,7 @@ const BackNavigation: React.FC<IAppProps> = ({ title }) => {
     <Button
       className="flex items-center px-0 !w-auto"
       variant="text"
-      {...propsMissing}
+     
       onClick={() => router.back()}
     >
       <div className="bg-black p-2 rounded-full text-white">
@@ -27,7 +26,7 @@ const BackNavigation: React.FC<IAppProps> = ({ title }) => {
       </div>
       <Typography
         className="ms-3 text-right text-base font-bold text-[#58595B] sm:block hidden"
-        {...propsMissing}
+       
         variant="paragraph"
       >
         {title}

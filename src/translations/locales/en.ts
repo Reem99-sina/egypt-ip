@@ -1,6 +1,12 @@
 export default {
   termsOfUse: "Terms of Use",
-  aboutThePlatform: "About",
+  aboutThePlatform: "About the Award",
+  eligibility: "Eligibility",
+  AwardCriteria: "Award Criteria",
+  Domains: "Domains",
+  subProcess: "Submission Process",
+  FAQ: "FAQ",
+  contactUs: "Contact Us",
   intellectualPropertyMarket: "market place",
   tradingPlatform: "Trading Platform",
   termsAndConditions: "Terms and Conditions",
@@ -38,9 +44,12 @@ export default {
   home: "Home",
   applicationForm: "Application Form",
   faq: "FAQ",
-  header: "What service?",
-  desc: "Save your time and benefit from Egypt's digital services in a few minutes",
+  header: "Welcome to the IP Commercialization Competition",
+  desc: "Your innovation journey starts here! Join us in recognizing and rewarding the brightest minds turning ideas into impact",
   apply: "Apply",
+  partner: "Collaborations",
+  partnerDesc:
+    "Collaborations with leading academic institutions, government bodies, and industry leaders ensure the competition fosters meaningful impact and sustainable growth",
   publicService: "Most Popular Services",
   socialWelfare: "Social Welfare",
   supply: "Supply",
@@ -51,7 +60,7 @@ export default {
   courts: "Courts",
   allGovernment: "All government services and data in one place",
   knowMore: "I want to know more about..",
-  EgyptDigitalJustice: "Egypt Digital Justice",
+  WhoIsIt: "Who is it for ?",
   EgyptDigitalJusticeDesc:
     "Services related to criminal, civil, economic and administrative aspects",
   Facilities: "Facilities",
@@ -77,15 +86,66 @@ export default {
     "Services related to domestic and international travel",
   About: "About",
   AboutDesc:
-    "We bring everything you need closer to you, use Digital Egypt from your smart device or mobile and pay in the way that suits you",
+    "Learn more about the competition’s mission to support innovators and researchers in bridging the gap between academic ideas and practical applications",
   accountOpen: "Open an account or log in",
   subscribeAccount: "Subscribe and be part of Digital Egypt",
   searchAllServices: "Browse all services",
   searchAllServicesDes: "Browse all Egypt Digital services now",
-  Benefits:"Benefits",
-  benefitsDesc:"Egypt's electronic portal provides you with all government services in an immediate and easy way, while you are in your place!",
-  totalNumberOfRequest:"Total number of requests on Digital Egypt",
-  numberOfRequest:"Number of requests yesterday",
-  totalNumberOfUser:"Total number of users of Digital Egypt",
-  numberNewUser:"Number of new users yesterday"
+  Benefits: "Benefits",
+  benefitsDesc:
+    "What’s in it for me?",
+  totalNumberOfRequest: "Total number of requests on Digital Egypt",
+  numberOfRequest: "Number of requests yesterday",
+  totalNumberOfUser: "Total number of users of Digital Egypt",
+  numberNewUser: "Number of new users yesterday",
+  EgyptDigitalServices: "Egypt Digital Services",
+  EgyptDigitalServicesDesc:
+    "Choose the service that suits you from the services offered",
+  activateARation: "Activate a ration card",
+  issuingAReplacement:
+    "Issuing a replacement for a damaged or lost ration card",
+  transferOne: "Transfer from one province to another",
+  psychologicalSeparation: "psychological separation",
+  IncludeMyFamily: "Include my family members",
+  ExchangeInquiry: "Exchange inquiry",
+  InquiryAbout: "Inquiry about the validity of an automated editor",
+  IssuingAgeneral: "Issuing a general power of attorney in cases (for himself)",
+  EditingADeletion: "Editing a deletion declaration (for himself)",
+  IssuingAdeclaration:
+    "Issuing a declaration that there are no modifications to the survey data (for himself)",
+  IssuingAnOfficial: "Issuing an official declaration (for himself)",
+  IssuingANotarized: "Issuing a notarized correction statement (for himself)",
+  IssuingAPower: "Issuing an official general power of attorney (for himself)",
+  AcademicInstitutions: "Academic Institutions",
+  AcademicInstitutionsDesc:
+    "Driving innovation through groundbreaking research and intellectual resources",
+  GovernmentBodies: "Government Bodies",
+  GovernmentBodiesDesc:
+    "Providing regulatory support and national strategic alignment",
+  IndustryLeaders: "Industry Leaders",
+  IndustryLeadersDesc:
+    "Offering market insights and pathways for commercialization",
+  InvestorsandVentCap: "Investors and Venture Capitalists",
+  InvestorsandVentCapDesc:
+    "Supporting funding opportunities for innovative projects",
+  competitionMission:
+    "Learn more about the competition’s mission to support innovators and researchers in bridging the gap between academic ideas and practical applications",
+  fosteringInnovation: "Fostering Innovation",
+  fosteringInnovationDesc:
+    "Encouraging groundbreaking ideas to transition from academia to real-world applications",
+  BuildingBridges: "Building Bridges",
+  BuildingBridgesDesc:
+    "Strengthening collaborations between universities, industries, and government bodies",
+  EnhancingImpact: "Enhancing Impact",
+  EnhancingImpactDesc:
+    "Supporting solutions that address critical challenges and improve societal outcomes",
+  PromotingSustainability: "Promoting Sustainability",
+  PromotingSustainabilityDesc:"Advocating for eco-friendly innovations and long-term growth strategies",
+  Recognition:"Recognition as a leader in innovation and commercialization",
+  Substantial:"Substantial financial reward and public acknowledgment",
+  Opportunities:"Opportunities to connect with investors, industry leaders, and policymakers",
+  Media:"Media exposure for your innovation",
+  Researchers:"Researchers and faculty members in academic institutions",
+  Teams:"Teams of innovators with a focus on technology, sustainability, or market-ready solutions",
+  Innovators :"Innovators from diverse backgrounds, including underrepresented groups"
 } as const;

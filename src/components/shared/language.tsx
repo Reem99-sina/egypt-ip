@@ -1,5 +1,4 @@
 import { useTranslation } from "@/translations/clients";
-import { propsMissing } from "@/utils/date.util";
 import {
   Menu,
   MenuHandler,
@@ -22,9 +21,9 @@ const Language = () => {
           <GrLanguage color="white" className="text-lg " />
         </div>
       </MenuHandler>
-      <MenuList className="z-10 p-0 focus:outline-none"{...propsMissing}>
+      <MenuList className="z-10 p-0 focus:outline-none">
         <div>
-          <MenuItem className="flex items-center "{...propsMissing}>
+          <MenuItem className="flex items-center ">
             <div
               onClick={() => changeLanguage("ar")}
               className="flex items-center gap-2 p-2  text-xs font-normal text-black hover:underline"
@@ -35,7 +34,7 @@ const Language = () => {
           </MenuItem>
         </div>
         <div>
-          <MenuItem {...propsMissing}>
+          <MenuItem >
             <div
               onClick={() => changeLanguage("en")}
               className="flex items-center gap-2 p-2 text-xs font-normal text-black hover:underline"

@@ -4,13 +4,16 @@ import { Button } from "@/components/shared/button.component";
 import { useTranslation } from "@/translations/clients";
 
 const HomeSection = () => {
-  const { t,lang } = useTranslation();
-  
+  const { t, lang } = useTranslation();
+
   return (
-    <section className="bg-bodyColor container   mx-auto" >
-      <ScrollAnimationExample  objectStart={{ x: lang=="en"?0:"100%" }} objectEnd={{ x: lang=="en"?80:0}}>
-        <div className=" min-h-[90vh]  overflow-x-hidden flex flex-col justify-center ">
-          <h3 className="text-[34px] leading-[47px] lg:leading-[60px]  lg:text-[54px] w-[50%] sm:w-full">
+    <section className="bg-bodyColor container   mx-auto">
+      <ScrollAnimationExample
+        objectStart={{ x: lang == "en" ? -80 : "100%" }}
+        objectEnd={{ x: lang == "en" ? 0 : 0 }}
+      >
+        <div className=" min-h-[90vh]  overflow-x-hidden flex flex-col justify-center max-w-full sm:max-w-[50%]">
+          <h3 className="text-[34px] leading-[47px] lg:leading-[60px]  lg:text-[54px] head-gradient">
             {t("header")}
           </h3>
           <p className="text-lg mt-10">{t("desc")}</p>

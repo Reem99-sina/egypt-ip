@@ -9,14 +9,14 @@ const CardBenefits = ({
 }: {
   icon: ReactNode;
   title: string;
-  body: string;
+  body?: string;
   className?: string;
 }) => {
   return (
-    <div className={clsx("flex flex-col", className)}>
+    <div className={clsx("flex flex-col ", className)}>
       {icon}
       <h3 className="text-lg font-black mt-4">{title}</h3>
-      <p className="text-[15px]">{body}</p>
+      {body && <p className="text-[15px]">{body}</p>}
     </div>
   );
 };

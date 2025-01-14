@@ -15,7 +15,7 @@ export default function Home() {
       <BenefitsSection />
       <WhoisSection />
       <HowToParticipate />
-      <Faq/>
+      <Faq />
     </div>
   );
 }
