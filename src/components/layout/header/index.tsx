@@ -20,6 +20,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowDown, IoIosArrowUp } from "@/icon";
 import ScrollAnimationExample from "@/components/shared/animation-conponent";
 import { linksdropdownProps } from "@/types/data.type";
+import { propsMissing } from "@/utils/date.util";
 
 export const Header = () => {
   const { t, lang } = useTranslation();
@@ -123,7 +124,7 @@ export const Header = () => {
                           </div>
                         </div>
                       </MenuHandler>
-                      <MenuList className="p-0">
+                      <MenuList className="p-0" {...propsMissing}>
                         {link.dropdownItems.map((item) => (
                           <Link
                             href={item.to}
