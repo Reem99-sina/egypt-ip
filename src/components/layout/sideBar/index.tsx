@@ -8,7 +8,7 @@ const SideBar: React.FC = () => {
   return (
     <>
       <div className="flex  h-full flex-col items-end py-6  ">
-        <MenuList />
+        <MenuList  />
         <div className="mt-auto self-center "></div>
         <div className="flex  h-full flex-col items-end py-6 "></div>
       </div>

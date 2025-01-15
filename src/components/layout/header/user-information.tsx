@@ -24,6 +24,7 @@ import {
   MdOutlineLanguage,
 } from "@/icon";
 import { useRouter } from "next/navigation";
+import { propsMissing } from "@/utils/date.util";
 
 interface Props {
   modalRef?: RefObject<ModalRef | null>;
@@ -82,9 +83,9 @@ const UserInformation: React.FunctionComponent<Props> = ({
                 />
               </div>
             </MenuHandler>
-            <MenuList className="w-56 bg-[#F4F6F9] p-0 shadow-none">
-              <Link href="/account/profile">
-                <MenuItem className="rounded-none">
+            <MenuList className="w-56 bg-[#F4F6F9] p-0 shadow-none" {...propsMissing}>
+              <Link href="/account/profile" >
+                <MenuItem className="rounded-none"  {...propsMissing}>
                   <div className="relative flex flex-col items-center ">
                     <FaUser />
                     <p
@@ -104,7 +105,7 @@ const UserInformation: React.FunctionComponent<Props> = ({
                 </MenuItem>
               </Link>
 
-              <MenuItem className="rounded-none bg-white">
+              <MenuItem className="rounded-none bg-white"  {...propsMissing}>
                 <div className="relative flex items-center justify-between ">
                   <div>
                     <FaUser />
@@ -132,13 +133,13 @@ const UserInformation: React.FunctionComponent<Props> = ({
                 className="cursor-pointer font-bold"
                 onClick={() => refModal?.current?.open()}
               >
-                <MenuItem className="my-2 flex flex-row rounded-none    text-[#7B8494]">
+                <MenuItem className="my-2 flex flex-row rounded-none    text-[#7B8494]"  {...propsMissing}>
                   حساب تعريفي جديد
                 </MenuItem>
               </div>
 
               <Link href="/" onClick={() => logout()} className="font-bold">
-                <MenuItem className="mt-[15px] flex flex-row rounded-none bg-[#7B8494] text-white">
+                <MenuItem className="mt-[15px] flex flex-row rounded-none bg-[#7B8494] text-white"  {...propsMissing}>
                   <IoIosLogIn className="ml-1" />
                   {t("logout")}
                 </MenuItem>
@@ -158,8 +159,8 @@ const UserInformation: React.FunctionComponent<Props> = ({
                 />
               </div>
             </MenuHandler>
-            <MenuList>
-              <MenuItem className="flex items-center ">
+            <MenuList  {...propsMissing}>
+              <MenuItem className="flex items-center "  {...propsMissing}>
                 {/* <KsaFlag className={clsx(lang === 'ar' ? 'ml-1' : 'mr-1')} /> */}
                 <div onClick={() => changeLanguage("ar")}>
                   {lang === "ar" ? (
@@ -171,7 +172,7 @@ const UserInformation: React.FunctionComponent<Props> = ({
                   )}
                 </div>
               </MenuItem>
-              <MenuItem className="flex items-center ">
+              <MenuItem className="flex items-center "  {...propsMissing}>
                 {/* <UsaFlag className={clsx(lang === 'ar' ? 'ml-1' : 'mr-1')} /> */}
                 <div onClick={() => changeLanguage("en")}>
                   {lang === "ar" ? <p>اللغة الانحليزية</p> : <p>English</p>}
