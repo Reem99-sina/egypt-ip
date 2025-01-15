@@ -131,7 +131,7 @@ export const Header = () => {
                             key={item.id}
                             className="text-sm font-normal text-white"
                           >
-                            <MenuItem className="p-4">{item.text}</MenuItem>
+                            <MenuItem className="p-4"{...propsMissing}>{item.text}</MenuItem>
                           </Link>
                         ))}
                       </MenuList>
