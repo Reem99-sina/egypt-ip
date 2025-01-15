@@ -8,6 +8,7 @@ export default {
   FAQ: "التعليمات",
   contactUs: "اتصل بنا",
   intellectualPropertyMarket: "سوق الملكية الفكرية",
+  market:"السوق",
   tradingPlatform: "منصة التداول",
   termsAndConditions: "الشروط والأحكام",
   cancellation: "إلغاء",

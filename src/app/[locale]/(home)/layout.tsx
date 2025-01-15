@@ -13,7 +13,7 @@ export default async function RootLayout({
       }
     >
       <div className="flex-col bg-white min-h-screen flex justify-between">
-        <div className="flex w-full flex-col items-center bg-transparent absolute top-0 !z-10 ">
+        <div className="flex w-full flex-col items-center bg-transparent absolute top-0 !z-10 text-white">
           <div className="container overflow-hidden py-8 ">
             <Header />
           </div>

@@ -26,6 +26,7 @@ export default {
   supportFiles: "Add your supporting files",
   showesone: "Select the images to display.",
   browseFiles: "Browse files",
+  market:"Market place",
   login: "Login",
   logout: "Logout",
   use_email_or_phone: "You can use your email or Username",

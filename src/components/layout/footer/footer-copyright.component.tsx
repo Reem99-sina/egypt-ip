@@ -77,8 +77,8 @@ export const FooterCopyright = () => {
                 <Image
                   src={
                     lang == "ar"
-                      ? "/bokra-gray-arabic.png"
-                      : "/bokra-gray-eng.png"
+                      ? "/"
+                      : "/"
                   }
                   width={100}
                   height={50}

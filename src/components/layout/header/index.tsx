@@ -59,6 +59,11 @@ export const Header = () => {
       },
       {
         id: 6,
+        text: t("market"),
+        to: "/market",
+      },
+      {
+        id: 7,
         text: t("contactUs"),
         to: "/#",
       },
@@ -111,7 +116,7 @@ export const Header = () => {
                         <div className="flex  cursor-pointer items-center gap-2 ">
                           <div
                             className={clsx(
-                              "relative text-lg font-bold text-white hover:after:absolute hover:after:bottom-[-3px] hover:after:block hover:after:h-px hover:after:w-full hover:after:bg-primary"
+                              "relative text-lg font-bold  hover:after:absolute hover:after:bottom-[-3px] hover:after:block hover:after:h-px hover:after:w-full hover:after:bg-primary"
                             )}
                           >
                             <div className="flex items-center justify-around">
@@ -128,7 +133,7 @@ export const Header = () => {
                           <Link
                             href={item.to}
                             key={item.id}
-                            className="text-sm font-normal text-white"
+                            className="text-sm font-normal "
                           >
                             <MenuItem className="p-4">{item.text}</MenuItem>
                           </Link>
@@ -143,7 +148,7 @@ export const Header = () => {
                       <Link
                         href={link.to as string}
                         className={clsx(
-                          "relative text-lg font-bold text-white ",
+                          "relative text-lg font-bold  ",
                           "scroll-smooth"
                         )}
                       >

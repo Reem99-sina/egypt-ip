@@ -160,7 +160,7 @@ const UserInformation: React.FunctionComponent<Props> = ({
               </div>
             </MenuHandler>
             <MenuList  >
-              <MenuItem className="flex items-center "  >
+              <MenuItem className="flex items-center cursor-pointer"  >
                 {/* <KsaFlag className={clsx(lang === 'ar' ? 'ml-1' : 'mr-1')} /> */}
                 <div onClick={() => changeLanguage("ar")}>
                   {lang === "ar" ? (
@@ -172,7 +172,7 @@ const UserInformation: React.FunctionComponent<Props> = ({
                   )}
                 </div>
               </MenuItem>
-              <MenuItem className="flex items-center "  >
+              <MenuItem className="flex items-center cursor-pointer"  >
                 {/* <UsaFlag className={clsx(lang === 'ar' ? 'ml-1' : 'mr-1')} /> */}
                 <div onClick={() => changeLanguage("en")}>
                   {lang === "ar" ? <p>اللغة الانحليزية</p> : <p>English</p>}
@@ -192,10 +192,11 @@ const UserInformation: React.FunctionComponent<Props> = ({
             text={t("login")}
             className="relative ms-6 flex  h-10 w-32 flex-row !bg-greenCustom px-4 py-1 text-sm"
           />
-          <div className="flex items-center justify-between text-white">
+          <div className="flex items-center justify-between ">
             <p
               className={clsx(
-                lang == "en" ? "font-black text-base underline" : ""
+                lang == "en" ? "font-black text-base underline"  : "",
+                "cursor-pointer"
               )}
               onClick={() => changeLanguage("en")}
             >
@@ -205,7 +206,8 @@ const UserInformation: React.FunctionComponent<Props> = ({
             <p className="ml-2 mr-2 text-[#7B8494] ">|</p>
             <p
               className={clsx(
-                lang == "ar" ? "font-black text-base underline" : ""
+                lang == "ar" ? "font-black text-base underline" : "",
+                "cursor-pointer"
               )}
               onClick={() => changeLanguage("ar")}
             >
