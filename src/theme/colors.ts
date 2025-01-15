@@ -25,5 +25,6 @@ export const colors = {
   grayColor2:"#DCDFE4",
   descText:"#010D3E",
   descText2:"#000A2D",
-  greenCustom3:"#54b5a6"
+  greenCustom3:"#54b5a6",
+  blueCustom3:"rgb(2,23,96)"
 };

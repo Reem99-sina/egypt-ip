@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaInstagram, FaFacebook } from "@/icon";
 
 export const FooterCopyright = () => {
   const { lang, t } = useTranslation();
@@ -14,11 +15,11 @@ export const FooterCopyright = () => {
       linkTo: "#",
       child: [
         {
-          title: t("termsAndConditions"),
+          title: t("emailFooter"),
           linkTo: "#",
         },
         {
-          title: t("privacyPolicy"),
+          title: t("phoneFooter"),
           linkTo: "#",
         },
       ],
@@ -27,7 +28,7 @@ export const FooterCopyright = () => {
       title: "CONTACT",
       child: [
         {
-          title: "info@bokra.com",
+          title: t("termDesc"),
           linkTo: "#",
         },
       ],
@@ -37,7 +38,7 @@ export const FooterCopyright = () => {
   return (
     <footer
       className={clsx(
-        "bg-black  shadow  py-6 ",
+        " border-t-2 border-footerColor bg-footerColor  shadow w-full p-4",
         path.includes("account") ? "rounded-tr-xl" : " rounded-t-xl"
       )}
     >
@@ -47,14 +48,24 @@ export const FooterCopyright = () => {
 
           <div className="  flex justify-between w-full flex-wrap gap-5">
             {social.map(({ title, child }) => (
-              <div key={title} className="flex items-center gap-3">
-                <div className="flex  items-start justify-start underline text-sm gap-[13px] text-grayLight">
+              <div key={title} className="flex  gap-3 flex-col">
+                <div className="flex  items-start justify-start underline text-sm gap-[13px] ">
                   {child.map((ele) => (
-                    <Link key={ele?.title} href={ele.linkTo}>
+                    <Link
+                      key={ele?.title}
+                      href={ele.linkTo}
+                      className="hover:text-blueCustom2"
+                    >
                       {ele?.title}
                     </Link>
                   ))}
                 </div>
+                {title == "SUPPORT" && (
+                  <div className="flex items-center gap-4 p-2 cursor-pointer">
+                    <FaFacebook className="hover:text-blueCustom2" />
+                    <FaInstagram className="hover:text-blueCustom2" />
+                  </div>
+                )}
               </div>
             ))}
             <div>

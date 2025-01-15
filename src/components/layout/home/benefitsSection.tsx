@@ -61,8 +61,12 @@ const BenefitsSection = () => {
               delay={index}
               key={index + ele.title}
             >
-              <div className="flex items-center justify-center">
-                <CardBenefits icon={ele.img} title={ele.title} />
+              <div className="flex items-center justify-center ">
+                <CardBenefits
+                  icon={ele.img}
+                  title={ele.title}
+                  className="text-blueCustom2"
+                />
                 <span className="mx-4 hidden lg:block">|</span>
               </div>
             </ScrollAnimationExample>
@@ -79,7 +83,11 @@ const BenefitsSection = () => {
               delay={index}
               key={index + ele.title}
             >
-              <CardBenefits icon={ele.img} title={ele.title} />
+              <CardBenefits
+                icon={ele.img}
+                title={ele.title}
+                className="text-blueCustom2"
+              />
             </ScrollAnimationExample>
           )
         )}

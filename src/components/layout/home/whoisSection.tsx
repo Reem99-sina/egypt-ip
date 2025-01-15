@@ -35,7 +35,7 @@ const WhoisSection = () => {
             <CardBenefits
               icon={<></>}
               title={ele?.title}
-              className="bg-white shadow-custom rounded-xl px-6 py-4 "
+              className="bg-white shadow-custom rounded-xl px-6 py-4 text-blueCustom3"
               key={index + 1}
             />
           </ScrollAnimationExample>

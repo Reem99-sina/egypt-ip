@@ -66,20 +66,12 @@ export const Services = () => {
   const { t } = useTranslation();
 
   return [
-    { title: t("EgyptDigitalJustice"), desc: t("EgyptDigitalJusticeDesc") },
-    { title: t("Facilities"), desc: t("FacilitiesDesc") },
+    { desc: t("stepOne") },
+    { desc: t("stepTwo") },
     {
-      title: t("EducationAndUniversities"),
-      desc: t("EducationAndUniversitiesDesc"),
+      desc: t("stepThree"),
     },
-    { title: t("socialProtection"), desc: t("socialProtectionDesc") },
-    { title: t("Properties"), desc: t("PropertiesDesc") },
-    { title: t("civilServices"), desc: t("civilServices") },
-    {
-      title: t("companiesAndEstablishments"),
-      desc: t("companiesAndEstablishmentsDesc"),
-    },
-    { title: t("travelAndRelocation"), desc: t("travelAndRelocationDesc") },
+    { desc: t("stepFour") },
   ];
 };
 export const AboutData = () => {
@@ -98,10 +90,9 @@ export const ServiceShow = () => {
       title: t("Researchers"),
     },
     {
-      title: t("Teams")
+      title: t("Teams"),
     },
     { title: t("Innovators") },
-
   ];
 };
 export const Partners = () => {
@@ -111,10 +102,56 @@ export const Partners = () => {
     {
       title: t("AcademicInstitutions"),
       desc: t("AcademicInstitutionsDesc"),
-      image:"/aI.png"
+      image: "/aI.png",
     },
-    { title: t("GovernmentBodies"), desc: t("GovernmentBodiesDesc"),image:"/goverment.png" },
-    { title: t("IndustryLeaders"), desc: t("IndustryLeadersDesc"),image:"/iL.avif" },
-    { title: t("InvestorsandVentCap"), desc: t("InvestorsandVentCapDesc") ,image:"/IVC.jpeg"},
+    {
+      title: t("GovernmentBodies"),
+      desc: t("GovernmentBodiesDesc"),
+      image: "/goverment.png",
+    },
+    {
+      title: t("IndustryLeaders"),
+      desc: t("IndustryLeadersDesc"),
+      image: "/iL.avif",
+    },
+    {
+      title: t("InvestorsandVentCap"),
+      desc: t("InvestorsandVentCapDesc"),
+      image: "/IVC.jpeg",
+    },
+  ];
+};
+export const Faqs = () => {
+  const { t } = useTranslation();
+
+  return [
+    {
+      question: t("faq1"),
+      answer: t("ans1"),
+    },
+    {
+      question: t("faq2"),
+      answer: t("ans2"),
+    },
+    {
+      question: t("faq3"),
+      answer: t("ans3"),
+    },
+    {
+      question: t("faq4"),
+      answer: t("ans4"),
+    },
+    {
+      question: t("faq5"),
+      answer: t("ans5"),
+    },
+    {
+      question: t("faq6"),
+      answer: t("ans6"),
+    },
+    {
+      question: t("faq7"),
+      answer: t("ans7"),
+    },
   ];
 };

@@ -11,9 +11,9 @@ const HowToParticipate = () => {
   return (
     <section className=" bg-blueCustom1 pb-10" id="how">
       <div className="mt-10 text-left flex flex-col items-start justify-start container mx-auto h-max">
-        <HeaderSection title={t("allGovernment")} light={true} />
+        <HeaderSection title={t("HowTo")} light={true} />
         <h3 className="text-white font-black text-[28px] -mt-5">
-          {t("knowMore")}
+          {t("HowTo")}
         </h3>
         <div className="w-full hidden lg:grid grid-cols-[1fr_0.2fr_1fr] gap-4 h-full mt-10">
           <div className="h-full w-full grid grid-rows-9 ">
@@ -21,7 +21,6 @@ const HowToParticipate = () => {
               index % 2 != 0 ? (
                 <CardBenefits
                   icon={<></>}
-                  title={ele?.title}
                   body={ele.desc}
                   className="border rounded-lg px-6 py-4 border-white text-white"
                   key={index + 1}
@@ -47,7 +46,6 @@ const HowToParticipate = () => {
               index % 2 == 0 ? (
                 <CardBenefits
                   icon={<></>}
-                  title={ele?.title}
                   body={ele.desc}
                   className="border rounded-lg px-6 py-4  border-white text-white"
                   key={index + 1}

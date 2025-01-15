@@ -9,6 +9,7 @@ import { useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "@/icon";
 import { Button } from "@/components/shared/button.component";
 import { useTranslation } from "@/translations/clients";
+import { Faqs } from "@/utils/date.util";
 
 const Faq = () => {
   const [open, setOpen] = useState("");
@@ -20,27 +21,28 @@ const Faq = () => {
       className=" container mx-auto bg-bodyColor pb-10 text-left flex flex-col items-center justify-center"
       id="faq"
     >
-      <HeaderSection title={"Questions we get asked"} />
-      <h3 className="text-back font-black text-[28px] -mt-5">
-        Frequently Asked Question
+      <HeaderSection title={t("headerFaq")} />
+      <h3 className="head-gradient font-black text-[28px] -mt-5">
+        {t("descFaq")}
       </h3>
       <div className="flex flex-col my-10 w-full">
-        <Accordion
-          open={"Why" == open}
-          icon={"Why" == open ? <IoIosArrowUp /> : <IoIosArrowDown />}
-        >
-          <AccordionHeader
-            onClick={() => handleOpen("Why")}
-            className="text-lg font-black text-descText"
+        {Faqs().map((ele) => (
+          <Accordion
+            open={ele.question == open}
+            icon={ele.question == open ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            key={ele.question}
           >
-            Why might I be interested in the AI Assistive Tools Hackathon?
-          </AccordionHeader>
-          <AccordionBody className="text-descText2">
-            {" "}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-            ipsa, eveniet facere eum placeat a,
-          </AccordionBody>
-        </Accordion>
+            <AccordionHeader
+              onClick={() => handleOpen(ele.question)}
+              className="text-lg font-black text-blueCustom3"
+            >
+              {ele.question}
+            </AccordionHeader>
+            <AccordionBody className="text-blueCustom1">
+              {ele.answer}
+            </AccordionBody>
+          </Accordion>
+        ))}
       </div>
       <div className="flex items-center justify-start w-full">
         <Button

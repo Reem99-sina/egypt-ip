@@ -189,9 +189,9 @@ const UserInformation: React.FunctionComponent<Props> = ({
               router.push("/login");
             }}
             text={t("login")}
-            className="relative ms-6 flex  h-10 w-32 flex-row !bg-blueCustom1 px-4 py-1 text-sm"
+            className="relative ms-6 flex  h-10 w-32 flex-row !bg-greenCustom px-4 py-1 text-sm"
           />
-          <div className="flex items-center justify-between ">
+          <div className="flex items-center justify-between text-white">
             <p
               className={clsx(
                 lang == "en" ? "font-black text-base underline" : ""
