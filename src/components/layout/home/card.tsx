@@ -7,8 +7,8 @@ const Card = ({
   img,
   className,
 }: {
-  title: string;
-  desc: string;
+  title?: string;
+  desc?: string;
   img?: string;
   className?: string;
 }) => {
@@ -31,8 +31,10 @@ const Card = ({
         </div>
       )}
       <div className="">
-        <h3 className="text-blueCustom2 text-base font-black">{title}</h3>
-        <p className="text-descText text-sm">{desc}</p>
+        {title && (
+          <h3 className="text-blueCustom2 text-base font-black">{title}</h3>
+        )}
+        {desc && <p className="text-descText text-sm">{desc}</p>}
       </div>
     </div>
   );

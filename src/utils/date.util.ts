@@ -95,7 +95,7 @@ export const ServiceShow = () => {
     { title: t("Innovators") },
   ];
 };
-export const Partners = () => {
+export const Collaborations = () => {
   const { t } = useTranslation();
 
   return [
@@ -155,3 +155,9 @@ export const Faqs = () => {
     },
   ];
 };
+export const Partners=[
+  "/creative.png",
+  "/comMinis.png",
+  "/logoCairoUni.png",
+  "/searchBody.jpg"
+]

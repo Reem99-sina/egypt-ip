@@ -2,7 +2,7 @@
 
 import { Settings } from "react-slick";
 import { useTranslation } from "@/translations/clients";
-import { Partners } from "@/utils/date.util";
+import { Collaborations } from "@/utils/date.util";
 import HeaderSection from "./headerSection";
 import Card from "./card";
 import SliderCustom from "@/components/shared/slider";
@@ -52,12 +52,12 @@ const Partner = () => {
           {t("partnerDesc")}
         </h3>
       </div>
-      <div className="w-[65%] mx-auto">
+      <div className="sm:w-[65%] mx-auto w-full">
         <SliderCustom
           settings={settings}
           className="mx-6 flex  justify-center py-12 text-center"
         >
-          {Partners()?.map((ele, index) => (
+          {Collaborations()?.map((ele, index) => (
             <Card
               title={ele.title}
               className="mx-4 min-h-[250px]  !bg-bodyColor"

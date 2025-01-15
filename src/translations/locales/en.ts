@@ -170,5 +170,6 @@ export default {
   descFaq:"Frequently Asked Question",
   emailFooter:"[Email Address]",
   phoneFooter:"[Phone Number]",
-  termDesc:"Visit [Link] to read the full terms and conditions for participation"
+  termDesc:"Visit [Link] to read the full terms and conditions for participation",
+  partnerHeader:"Partner"
 } as const;
