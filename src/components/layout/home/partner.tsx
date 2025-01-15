@@ -1,12 +1,11 @@
 "use client";
 
 import { Settings } from "react-slick";
-import Slider from "react-slick";
-
 import { useTranslation } from "@/translations/clients";
 import { Partners } from "@/utils/date.util";
 import HeaderSection from "./headerSection";
 import Card from "./card";
+import SliderCustom from "@/components/shared/slider";
 
 const Partner = () => {
   const { t } = useTranslation();
@@ -54,8 +53,8 @@ const Partner = () => {
         </h3>
       </div>
       <div className="w-[65%] mx-auto">
-        <Slider
-          {...(settings as Settings)}
+        <SliderCustom
+          settings={settings}
           className="mx-6 flex  justify-center py-12 text-center"
         >
           {Partners()?.map((ele, index) => (
@@ -67,7 +66,7 @@ const Partner = () => {
               key={index}
             />
           ))}
-        </Slider>
+        </SliderCustom>
       </div>
     </div>
   );
