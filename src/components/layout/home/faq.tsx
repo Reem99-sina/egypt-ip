@@ -9,7 +9,7 @@ import { useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "@/icon";
 import { Button } from "@/components/shared/button.component";
 import { useTranslation } from "@/translations/clients";
-import { Faqs } from "@/utils/date.util";
+import { Faqs, propsMissing } from "@/utils/date.util";
 
 const Faq = () => {
   const [open, setOpen] = useState("");
@@ -31,10 +31,13 @@ const Faq = () => {
             open={ele.question == open}
             icon={ele.question == open ? <IoIosArrowUp /> : <IoIosArrowDown />}
             key={ele.question}
+            {...propsMissing}
           >
             <AccordionHeader
               onClick={() => handleOpen(ele.question)}
               className="text-lg font-black text-blueCustom3"
+            {...propsMissing}
+
             >
               {ele.question}
             </AccordionHeader>
