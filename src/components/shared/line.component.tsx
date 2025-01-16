@@ -1,4 +1,5 @@
-import { FC } from 'react';
+import clsx from "clsx";
+import { FC } from "react";
 
 interface Props {
   color?: string;
@@ -7,8 +8,7 @@ interface Props {
 export const Line: FC<Props> = ({ color }) => {
   return (
     <div
-      className={'h-[1px] w-full bg-textMain'}
-      style={color ? { backgroundColor: color } : {}}
+      className={clsx("h-[1px] w-full ", color ? "bg-" + color : "bg-borderInput")}
     />
   );
 };

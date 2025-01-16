@@ -62,7 +62,7 @@ export const MobileMenuDrawer = forwardRef<DrawerRef, Props>(
 
     return (
       <Drawer ref={ref} width={width} placement={placement}>
-        <div className=" h-screen w-full   bg-bodyColor ">
+        <div className=" h-screen w-full   bg-bodyColor text-black">
           <div className="flex justify-between justify-items-start py-4 pe-3 ps-4 ">
             {/* <Link href={`/${lang}/`}>
               <SmallFullWhiteLogoIcon />

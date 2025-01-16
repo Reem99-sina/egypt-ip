@@ -172,5 +172,9 @@ export default {
   emailFooter:"[Email Address]",
   phoneFooter:"[Phone Number]",
   termDesc:"Visit [Link] to read the full terms and conditions for participation",
-  partnerHeader:"Partner"
+  partnerHeader:"Partner",
+  filterBy: 'Filter By',
+  type:"type",
+  applyFilter: 'Update Category',
+
 } as const;

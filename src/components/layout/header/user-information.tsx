@@ -24,6 +24,7 @@ import {
   MdOutlineLanguage,
 } from "@/icon";
 import { useRouter } from "next/navigation";
+import Language from "@/components/shared/language";
 
 
 interface Props {
@@ -192,7 +193,7 @@ const UserInformation: React.FunctionComponent<Props> = ({
             text={t("login")}
             className="relative ms-6 flex  h-10 w-32 flex-row !bg-greenCustom px-4 py-1 text-sm"
           />
-          <div className="flex items-center justify-between ">
+          <div className="md:flex items-center justify-between  hidden">
             <p
               className={clsx(
                 lang == "en" ? "font-black text-base underline"  : "",
@@ -213,6 +214,9 @@ const UserInformation: React.FunctionComponent<Props> = ({
             >
               {t("ar")}
             </p>
+          </div>
+          <div className="md:hidden flex">
+          <Language/>
           </div>
         </div>
       )}

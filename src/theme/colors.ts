@@ -18,6 +18,7 @@ export const colors = {
   textMain:"#374151",
   describeColor:'#64748b',
   greenCustom:"#60baa7",
+  green:"#60baa7",
   blueCustom2:"#2a71f0",
   bgColor1:"#f1f5f9",
   grayColor1:"#f0f0f0",
@@ -26,5 +27,6 @@ export const colors = {
   descText:"#010D3E",
   descText2:"#000A2D",
   greenCustom3:"#54b5a6",
-  blueCustom3:"rgb(2,23,96)"
+  blueCustom3:"rgb(2,23,96)",
+  borderInput:"#E2E2E2"
 };

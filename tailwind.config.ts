@@ -140,7 +140,6 @@ const config: Config = {
         },
       });
     },
-    require('tailwind-scrollbar-hide'),
   ],
 };
 

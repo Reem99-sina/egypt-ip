@@ -14,7 +14,7 @@ const FilterComponent = ({
   
   return (
     <div className="flex items-center gap-3">
-      <p className="text-xs font-normal text-textMain">{title}</p>
+      <p className="text-sm font-normal text-textMain">{title}</p>
       {type == "select" && options && (
         <Select
           placeholder={title}

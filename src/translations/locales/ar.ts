@@ -168,5 +168,9 @@ export default {
   emailFooter: "[عنوان البريد الإلكتروني]",
   phoneFooter: "[رقم الهاتف]",
   termDesc:"قم بزيارة [الرابط] لقراءة الشروط والأحكام الكاملة للمشاركة",
-  partnerHeader:"الشركاء"
+  partnerHeader:"الشركاء",
+  filterBy: 'التصفية بواسطة',
+  type:"النوع",
+  applyFilter: 'تحديث التصنيف',
+
 } as const;

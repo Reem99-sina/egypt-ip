@@ -102,7 +102,7 @@ export const Header = () => {
           </div>
 
           <div
-            className={clsx(" invisible flex items-center gap-x-4 sm:visible")}
+            className={clsx(" invisible flex items-center gap-4 sm:visible flex-wrap")}
           >
             <div className="invisible flex flex-row  sm:visible gap-5">
               {links?.map((link) => (

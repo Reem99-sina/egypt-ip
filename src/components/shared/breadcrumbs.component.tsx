@@ -10,7 +10,7 @@ interface Props {
 export const Breadcrumbs: FC<Props> = ({ data }) => {
   return (
     <div className='flex  justify-between'>
-      <div className='flex items-center  fill-secondary3 text-xs font-black sm:text-sm'>
+      <div className='flex items-center  fill-secondary3 text-sm font-black sm:text-sm'>
         <Link href='/'></Link>
 
         {data.map((item, index) => {
@@ -23,7 +23,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
                 <p
                   className={clsx(
                     isLastItem ? 'text-black' : 'text-blueCustom1',
-                    'text-xs',
+                    
                   )}
                 >
                   {item.text}
@@ -42,7 +42,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
                 <Link
                   href={item.href ? item.href : ''}
                   className={clsx(
-                    'text-xs  hover:underline',
+                    '  hover:underline',
                     isLastItem ? 'text-black ' : 'text-blueCustom1',
                   )}
                 >
@@ -51,7 +51,7 @@ export const Breadcrumbs: FC<Props> = ({ data }) => {
               )}
 
               {!isLastItem && !isNextItemEmpty && (
-                <span className={clsx('mx-5 text-xs text-blueCustom1')}>/</span>
+                <span className={clsx('mx-5  text-blueCustom1')}>/</span>
               )}
             </div>
           );

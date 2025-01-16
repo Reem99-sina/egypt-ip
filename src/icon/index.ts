@@ -13,8 +13,10 @@ export { default as Vision } from "./vision.png";
 export { default as Mission } from "./mission.png";
 export { default as Line } from "./line.svg";
 import { FaRegBell } from "react-icons/fa";
+import { GrSubtractCircle } from "react-icons/gr";
 import { RiVoiceRecognitionLine } from "react-icons/ri";
 import { CgMediaPodcast } from "react-icons/cg";
+import { FiPlusCircle } from "react-icons/fi";
 
 import {
    FaMoneyBill ,
@@ -63,5 +65,7 @@ export {
   MdOutlineEmail,
   FaMoneyBill,
   MdOutlineConnectWithoutContact,
-  CgMediaPodcast
+  CgMediaPodcast,
+  GrSubtractCircle,
+  FiPlusCircle
 };
