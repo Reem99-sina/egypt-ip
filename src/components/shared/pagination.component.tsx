@@ -8,7 +8,7 @@ import { useTranslation } from "@/translations/clients";
 
 const itemContainerClassName = clsx(
   "mx-1 flex h-9 w-9 items-center justify-center",
-  "rounded border border-border bg-bodyColor text-text",
+  "rounded border border-border bg-bg text-text",
   "hover:bg-secondary"
 );
 
@@ -25,7 +25,7 @@ interface Props {
 
 const Pagination: React.FC<Props> = memo(
   ({ onPageChange, pageCount, initialPage = 1 }) => {
-    const {  lang } = useTranslation();
+    const { lang } = useTranslation();
 
     return (
       <ReactPaginate
@@ -66,7 +66,7 @@ const Pagination: React.FC<Props> = memo(
           "bg-[#F4F6F9] w-[80px] h-[30px] border-0 "
         )}
         previousLinkClassName={clsx(itemClassName, "text-bg")}
-        activeClassName="border-0 bg-blueCustom"
+        activeClassName="bg-blueCustom1  border-0"
         activeLinkClassName="text-white"
         disabledLinkClassName={"cursor-not-allowed"}
         disabledClassName="opacity-30 "

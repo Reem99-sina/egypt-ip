@@ -12,8 +12,8 @@ import clsx from "clsx";
 import React, { useState } from "react";
 
 const MarketPlace = () => {
-const [page,setPage]=useState(0)
-const { t } = useTranslation();
+  const [page, setPage] = useState(1);
+  const { t } = useTranslation();
 
   return (
     <div className="py-10 flex    container mx-auto gap-5">
@@ -50,7 +50,7 @@ const { t } = useTranslation();
         <div className="w-full">
           <Button
             text={t("applyFilter")}
-            className="bg-blueCustom1 !py-3 !text-xs !px-4 !w-full"
+            className="bg-blueCustom1 !py-3 !text-sm !px-4 !w-full"
           />
         </div>
       </div>
@@ -82,7 +82,7 @@ const { t } = useTranslation();
         />
         <div>
           <Pagination
-            pageCount={2}
+            pageCount={Math.ceil(10 / 5)}
             initialPage={page}
             className=""
             onPageChange={(page) => setPage(page)}
