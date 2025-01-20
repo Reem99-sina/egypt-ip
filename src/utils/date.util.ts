@@ -1,4 +1,8 @@
 import { useTranslation } from "@/translations/clients";
+import AofSR from "@/icon/AofSR.jpg"
+import innovators from "@/icon/innovators.jpg"
+import itida from "@/icon/itida.jpg"
+
 // import { RiAddLargeFill } from "react-icons/ri";
 // import { FaUser } from "react-icons/fa";
 /**
@@ -155,9 +159,9 @@ export const Faqs = () => {
     },
   ];
 };
+
 export const Partners=[
-  "/creative.png",
-  "/comMinis.png",
-  "/logoCairoUni.png",
-  "/searchBody.jpg"
+  itida,
+  innovators,
+  AofSR,
 ]

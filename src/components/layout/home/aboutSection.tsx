@@ -4,6 +4,7 @@ import Card from "./card";
 import HeaderSection from "./headerSection";
 import { useTranslation } from "@/translations/clients";
 
+
 const AboutSection = () => {
   const { t } = useTranslation();
   const arrayAbout = [
@@ -50,7 +51,7 @@ const AboutSection = () => {
             delay={index}
             key={index}
           >
-            <Card {...ele} className="gap-4 min-h-[130px] justify-between" img={ele.image}/>
+            <Card {...ele} className="gap-4  justify-between" img={ele.image}/>
           </ScrollAnimationExample>
         ))}
       </div>

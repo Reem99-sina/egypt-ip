@@ -59,7 +59,7 @@ const PartnerSection = () => {
           className="mx-6 flex  justify-center py-12 text-center"
         >
           {Partners?.map((ele, index) => (
-            <Card className="mx-4 " img={ele} key={index} />
+            <Card className="mx-4 !bg-white" img={ele} key={index} />
           ))}
         </SliderCustom>
       </div>

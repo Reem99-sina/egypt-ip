@@ -55,12 +55,12 @@ const Partner = () => {
       <div className="sm:w-[65%] mx-auto w-full">
         <SliderCustom
           settings={settings}
-          className="mx-6 flex  justify-center py-12 text-center"
+          className="mx-6 flex  justify-center py-12 text-center  items-stretch"
         >
           {Collaborations()?.map((ele, index) => (
             <Card
               title={ele.title}
-              className="mx-4 min-h-[250px]  !bg-bodyColor"
+              className="mx-4   !bg-bodyColor"
               desc={ele.desc}
               img={ele.image}
               key={index}

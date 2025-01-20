@@ -38,7 +38,7 @@ const BenefitsSection = () => {
 
   return (
     <section
-      className=" container mx-auto bg-bodyColor pb-10 text-left flex flex-col items-start justify-start"
+      className=" container mx-auto bg-bodyColor pb-10 text-left flex flex-col items-center justify-center"
       id="benefit"
     >
       <HeaderSection title={t("Benefits")} />

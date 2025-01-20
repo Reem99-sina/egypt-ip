@@ -108,7 +108,7 @@ export const Header = () => {
               {links?.map((link) => (
                 <div
                   key={link.id}
-                  className="flex flex-row items-center font-sans "
+                  className="flex flex-row items-center font-black "
                 >
                   {link.dropdownItems?.length ? (
                     <Menu>
@@ -116,7 +116,7 @@ export const Header = () => {
                         <div className="flex  cursor-pointer items-center gap-2 ">
                           <div
                             className={clsx(
-                              "relative text-lg font-bold  hover:after:absolute hover:after:bottom-[-3px] hover:after:block hover:after:h-px hover:after:w-full hover:after:bg-primary"
+                              "relative text-lg   hover:after:absolute hover:after:bottom-[-3px] hover:after:block hover:after:h-px hover:after:w-full hover:after:bg-primary"
                             )}
                           >
                             <div className="flex items-center justify-around">
@@ -148,7 +148,7 @@ export const Header = () => {
                       <Link
                         href={link.to as string}
                         className={clsx(
-                          "relative text-lg font-bold  ",
+                          "relative text-lg",
                           "scroll-smooth"
                         )}
                       >
