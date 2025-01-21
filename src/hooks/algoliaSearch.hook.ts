@@ -1,9 +1,10 @@
+import { config } from "@/config";
 import { algoliasearch } from "algoliasearch";
 
 export default function AlgoliasearchConfig() {
   const client = algoliasearch(
-    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID!,
-    process.env.NEXT_PUBLIC_ALGOLIA_ADMIN_KEY!
+    config.NEXT_PUBLIC_ALGOLIA_APP_ID!,
+    config.NEXT_PUBLIC_ALGOLIA_ADMIN_KEY!
   );
 
   return client;
