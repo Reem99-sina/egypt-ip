@@ -3,6 +3,7 @@ import ScrollAnimationExample from "@/components/shared/animation-conponent";
 import Card from "./card";
 import HeaderSection from "./headerSection";
 import { useTranslation } from "@/translations/clients";
+import {PromotingSustainability,BuildingBridges,EnhancingImpact,FosteringInnovation} from "@/icon"
 
 
 const AboutSection = () => {
@@ -11,22 +12,22 @@ const AboutSection = () => {
     {
       title: t("fosteringInnovation"),
       desc: t("fosteringInnovationDesc"),
-      image:"/FosteringInnovation.png"
+      image:FosteringInnovation
     },
     {
       title: t("BuildingBridges"),
       desc: t("BuildingBridgesDesc"),
-      image:"/BuildingBridges.jpg"
+      image:BuildingBridges
     },
     {
       title: t("EnhancingImpact"),
       desc: t("EnhancingImpactDesc"),
-      image:"/enhancingImpact.jpg"
+      image:EnhancingImpact
     },
     {
       title: t("PromotingSustainability"),
       desc: t("PromotingSustainabilityDesc"),
-      image:"/PromotingSustainability.jpg"
+      image:PromotingSustainability
     },
   ];
 

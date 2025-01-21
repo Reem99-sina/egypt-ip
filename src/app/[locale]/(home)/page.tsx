@@ -6,6 +6,7 @@ import HowToParticipate from "@/components/layout/home/howToParticipate";
 import Partner from "@/components/layout/home/collaborations";
 import WhoisSection from "@/components/layout/home/whoisSection";
 import PartnerSection from "@/components/layout/home/partnerSection";
+import Participants from "@/components/layout/home/participants";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HomeSection />
       <Partner />
       <AboutSection />
+      <Participants/>
       <BenefitsSection />
       <WhoisSection />
       <HowToParticipate />

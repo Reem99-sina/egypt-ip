@@ -1,17 +1,18 @@
 import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 
+
 const Card = ({
   title,
   desc,
   img,
   className,
-}: {
+}: ({
   title?: string;
   desc?: string;
   img?: StaticImageData|string;
   className?: string;
-}) => {
+})) => {
   return (
     <div
       className={clsx(

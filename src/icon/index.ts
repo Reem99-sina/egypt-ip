@@ -19,14 +19,18 @@ import { CgMediaPodcast } from "react-icons/cg";
 import { FiPlusCircle } from "react-icons/fi";
 
 import {
-   FaMoneyBill ,
+  FaMoneyBill,
   FaYoutube,
   FaInstagram,
   FaTwitter,
   FaFacebookSquare,
 } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
-import { MdOutlineEmail, MdEdit,MdOutlineConnectWithoutContact } from "react-icons/md";
+import {
+  MdOutlineEmail,
+  MdEdit,
+  MdOutlineConnectWithoutContact,
+} from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { CgCloseR } from "react-icons/cg";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -37,10 +41,49 @@ import { IoIosLogIn } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TbSquareCheck } from "react-icons/tb";
 import { TbSquareCheckFilled } from "react-icons/tb";
-import { FaWindowClose,FaFacebook } from "react-icons/fa";
-
+import { FaWindowClose, FaFacebook } from "react-icons/fa";
+import Helwan from "./Helwan.jpg";
+import Asu from "./asu.jpg";
+import Tanta from "./tanta.png";
+import Zaza from "./zaza.png";
+import Alex from "./alex.png";
+import American from "./american.png";
+import Ainshams from "./ainshams.png";
+import Minia from "./minia.png";
+import Cairo from "./cairo.png";
+import Mansoura from "./mansoura.png";
+import Ai from "./aI.png"
+import Goverment from "./goverment.png"
+import IL from "./iL.avif"
+import IVC from "./IVC.jpeg"
+import BuildingBridges from "./BuildingBridges.jpg"
+import EnhancingImpact from "./enhancingImpact.jpg"
+import PromotingSustainability from "./PromotingSustainability.jpg"
+import FosteringInnovation from "./FosteringInnovation.png"
+import AmericanInternational from "./americanInternational.png"
+import BSC from "./BSC.jpg"
 
 export {
+  BSC,
+  AmericanInternational,
+  FosteringInnovation,
+  BuildingBridges,
+  EnhancingImpact,
+  PromotingSustainability,
+  Ai,
+  Goverment,
+  IL,
+  IVC,
+  Helwan,
+  Asu,
+  Tanta,
+  Zaza,
+  Alex,
+  American,
+  Ainshams,
+  Minia,
+  Cairo,
+  Mansoura,
   FaFacebook,
   RiVoiceRecognitionLine,
   FaWindowClose,
@@ -67,5 +110,5 @@ export {
   MdOutlineConnectWithoutContact,
   CgMediaPodcast,
   GrSubtractCircle,
-  FiPlusCircle
+  FiPlusCircle,
 };

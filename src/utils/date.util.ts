@@ -1,7 +1,25 @@
 import { useTranslation } from "@/translations/clients";
-import AofSR from "@/icon/AofSR.jpg"
-import innovators from "@/icon/innovators.jpg"
-import itida from "@/icon/itida.jpg"
+import AofSR from "@/icon/AofSR.jpg";
+import innovators from "@/icon/innovators.jpg";
+import itida from "@/icon/itida.jpg";
+import {
+  Ainshams,
+  Alex,
+  American,
+  Tanta,
+  Mansoura,
+  Zaza,
+  Helwan,
+  Cairo,
+  Minia,
+  Asu,
+  Ai,
+  IL,
+  IVC,
+  Goverment,
+  AmericanInternational,
+  BSC
+} from "@/icon";
 
 // import { RiAddLargeFill } from "react-icons/ri";
 // import { FaUser } from "react-icons/fa";
@@ -106,22 +124,22 @@ export const Collaborations = () => {
     {
       title: t("AcademicInstitutions"),
       desc: t("AcademicInstitutionsDesc"),
-      image: "/aI.png",
+      image: Ai,
     },
     {
       title: t("GovernmentBodies"),
       desc: t("GovernmentBodiesDesc"),
-      image: "/goverment.png",
+      image: Goverment,
     },
     {
       title: t("IndustryLeaders"),
       desc: t("IndustryLeadersDesc"),
-      image: "/iL.avif",
+      image: IL,
     },
     {
       title: t("InvestorsandVentCap"),
       desc: t("InvestorsandVentCapDesc"),
-      image: "/IVC.jpeg",
+      image: IVC,
     },
   ];
 };
@@ -160,8 +178,18 @@ export const Faqs = () => {
   ];
 };
 
-export const Partners=[
-  itida,
-  innovators,
-  AofSR,
-]
+export const Partners = [itida, innovators, AofSR];
+export const participants = [
+  AmericanInternational,
+  Ainshams,
+  Alex,
+  American,
+  Tanta,
+  Mansoura,
+  Zaza,
+  Helwan,
+  Cairo,
+  Minia,
+  Asu,
+  BSC
+];

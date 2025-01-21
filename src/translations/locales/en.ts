@@ -176,5 +176,5 @@ export default {
   filterBy: 'Filter By',
   type:"type",
   applyFilter: 'Update Category',
-
+  participantHeader:"Participants"
 } as const;

@@ -172,5 +172,6 @@ export default {
   filterBy: 'التصفية بواسطة',
   type:"النوع",
   applyFilter: 'تحديث التصنيف',
+  participantHeader:"المشاركين"
 
 } as const;
