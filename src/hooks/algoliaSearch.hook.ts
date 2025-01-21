@@ -2,8 +2,8 @@ import { algoliasearch } from "algoliasearch";
 
 export default function AlgoliasearchConfig() {
   const client = algoliasearch(
-    "BYOYYZCKQD",
-    "0699d4c11b1b4e3a0465dcb0091da661"
+    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID!,
+    process.env.NEXT_PUBLIC_ALGOLIA_ADMIN_KEY!
   );
 
   return client;
