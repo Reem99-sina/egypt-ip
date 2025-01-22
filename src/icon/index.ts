@@ -25,7 +25,7 @@ import {
   FaTwitter,
   FaFacebookSquare,
 } from "react-icons/fa";
-import { IoLocation } from "react-icons/io5";
+import { IoLocation,IoWaterOutline,IoEarthOutline } from "react-icons/io5";
 import {
   MdOutlineEmail,
   MdEdit,
@@ -62,6 +62,7 @@ import PromotingSustainability from "./PromotingSustainability.jpg"
 import FosteringInnovation from "./FosteringInnovation.png"
 import AmericanInternational from "./americanInternational.png"
 import BSC from "./BSC.jpg"
+import { PiPlantFill } from "react-icons/pi";
 
 export {
   BSC,
@@ -111,4 +112,7 @@ export {
   CgMediaPodcast,
   GrSubtractCircle,
   FiPlusCircle,
+  PiPlantFill,
+  IoWaterOutline,
+  IoEarthOutline
 };

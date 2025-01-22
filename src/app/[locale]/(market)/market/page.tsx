@@ -11,15 +11,17 @@ import React, { useEffect, useState } from "react";
 import {
   Hits,
   InstantSearch,
+  // Pagination,
   RefinementList,
   Stats,
+  // usePagination,
 } from "react-instantsearch";
 
 const MarketPlace = () => {
   const [page, setPage] = useState(1);
+
   const { t } = useTranslation();
   const client = AlgoliasearchConfig();
-
   useEffect(() => {
     client.saveObjects({ indexName: "item", objects: defaultData });
     client.setSettings({indexName:"item",indexSettings:{
@@ -115,7 +117,6 @@ const MarketPlace = () => {
           </div>
           <Line />
           <Stats/>
-
           <Hits hitComponent={Hit} />
           <div>
             <Pagination

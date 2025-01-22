@@ -176,5 +176,6 @@ export default {
   filterBy: 'Filter By',
   type:"type",
   applyFilter: 'Update Category',
-  participantHeader:"Participants"
+  participantHeader:"Participants",
+  Competion:"Competions"
 } as const;

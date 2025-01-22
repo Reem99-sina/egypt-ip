@@ -12,7 +12,7 @@ const FormRegister = () => {
   const onSubmit = () => {};
 
   return (
-    <div className="flex-col items-center rounded-lg border border-grayLight flex min-w-[400px]">
+    <div className="flex-col items-center rounded-lg border border-grayLight flex max-w-[568px] sm:w-[500px]">
       <div className="p-6 items-center justify-center text-center flex flex-col gap-3 w-full">
         <h3 className="text-[20px] !font-black text-textMain">
           {t("register")}

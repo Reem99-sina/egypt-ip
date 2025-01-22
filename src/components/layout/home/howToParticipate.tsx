@@ -11,7 +11,7 @@ const HowToParticipate = () => {
   return (
     <section className=" bg-blueCustom1 pb-10" id="how">
       <div className="mt-10 text-left flex flex-col items-start justify-start container mx-auto h-max">
-        <HeaderSection title={t("HowTo")} light={true} />
+        <HeaderSection title={t("HowTo")} light={"text-blueCustom3"} />
         <h3 className="text-white font-black text-[28px] -mt-5">
           {t("HowTo")}
         </h3>

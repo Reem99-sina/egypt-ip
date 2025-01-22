@@ -5,19 +5,19 @@ const HeaderSection = ({
   light,
 }: {
   title: string;
-  light?: boolean;
+  light?: string;
 }) => {
   return (
     <div
       className={clsx(
         " font-Inter text-[14px] lg:text-[18px] my-10 font-bold",
-        light ? "text-gradient-light" : "text-gradient"
+        light ? light : "text-gradient"
       )}
     >
       <div className="flex justify-center my-2">
         <span
           className={clsx(
-            "w-16 h-[1.6px]  bg-gradient-to-r  to-blueCustom1",
+            "w-16 h-[1.6px]  bg-gradient-to-r  to-blueCustom3",
             light ? "from-blueCustom2" : "from-black"
           )}
         ></span>

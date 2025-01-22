@@ -3,7 +3,8 @@ import { useTranslation } from "@/translations/clients";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebook } from "@/icon";
+import {  FaFacebook } from "@/icon";
+import InstagramIcon from "@/components/shared/instagram-icon";
 
 export const FooterCopyright = () => {
   const { lang, t } = useTranslation();
@@ -27,7 +28,7 @@ export const FooterCopyright = () => {
       child: [
         {
           title: t("termDesc"),
-          linkTo:""
+          linkTo: "",
         },
       ],
     },
@@ -36,8 +37,7 @@ export const FooterCopyright = () => {
   return (
     <footer
       className={clsx(
-        " border-t-2 border-footerColor bg-footerColor  shadow w-full p-4",
-        
+        " border-t-2 border-footerColor bg-footerColor  shadow w-full p-4"
       )}
     >
       <div className=" flex flex-col items-center justify-center container mx-auto">
@@ -67,7 +67,11 @@ export const FooterCopyright = () => {
                 {title == "SUPPORT" && (
                   <div className="flex items-center gap-4 p-2 cursor-pointer">
                     <FaFacebook className="hover:text-blueCustom2" />
-                    <FaInstagram className="hover:text-blueCustom2" />
+                    <InstagramIcon
+                      w="w-[16px]"
+                      h="h-[16px]"
+                      fill="fill-white"
+                    />
                   </div>
                 )}
               </div>
@@ -75,11 +79,7 @@ export const FooterCopyright = () => {
             <div className="flex items-center justify-center">
               <Link href={`/${lang}/`}>
                 <Image
-                  src={
-                    lang == "ar"
-                      ? "/"
-                      : "/"
-                  }
+                  src={lang == "ar" ? "/" : "/"}
                   width={100}
                   height={50}
                   alt="logo"

@@ -65,9 +65,9 @@ const BenefitsSection = () => {
                 <CardBenefits
                   icon={ele.img}
                   title={ele.title}
-                  className="text-blueCustom2"
+                  className="text-blueCustom1"
                 />
-                <span className="mx-4 hidden lg:block">|</span>
+                {/* <span className="mx-4 hidden lg:block">|</span> */}
               </div>
             </ScrollAnimationExample>
           ) : (
@@ -86,7 +86,7 @@ const BenefitsSection = () => {
               <CardBenefits
                 icon={ele.img}
                 title={ele.title}
-                className="text-blueCustom2"
+                className="text-blueCustom1"
               />
             </ScrollAnimationExample>
           )
