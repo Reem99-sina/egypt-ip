@@ -173,7 +173,7 @@ export default {
   phoneFooter:"[Phone Number]",
   termDesc:"Visit [Link] to read the full terms and conditions for participation",
   partnerHeader:"Partner",
-  filterBy: 'Filter By',
+  filterBy: 'Filters',
   type:"type",
   applyFilter: 'Update Category',
   participantHeader:"Participants",

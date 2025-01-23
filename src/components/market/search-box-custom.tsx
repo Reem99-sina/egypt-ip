@@ -14,7 +14,7 @@ const SearchBoxCustom = ({
     <SearchBox
       placeholder={placeholder}
       onSubmit={onSubmit}
-      submitIconComponent={() => <CiSearch className="text-blueCustom1" />}
+      submitIconComponent={() => <CiSearch className="text-white " />}
     />
   );
 };

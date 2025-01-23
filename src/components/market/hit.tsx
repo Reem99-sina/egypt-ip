@@ -7,6 +7,7 @@ import type { Hit } from "instantsearch.js";
 type CustomHit = Hit<{
   title: string;
   desc: string;
+  img:string;
   __position: number;
   __queryID?: string;
 }>;
@@ -15,19 +16,21 @@ const Hit = ({ hit }: { hit: CustomHit }) => {
   return (
     <div
       className={clsx(
-        "bg-bodyColor rounded-xl p-4 flex flex-col justify-start mb-4 items-start gap-4"
+        "bg-bodyColor rounded-xl  flex flex-col justify-start mb-4 items-start gap-5"
       )}
     >
-      <div className=" flex flex-col items-start justify-start min-h-[100px] gap-4">
+      <div className={clsx("w-full h-[200px]  bg-[url('/ip.png')] rounded-t-xl ")}>
+      </div>
+      <div className=" flex flex-col items-start justify-start min-h-[100px] gap-4 px-4 pb-4">
         {hit.title && (
           <Highlight
-            className="text-blueCustom2 text-base font-black"
+            className="text-blueCustom3 text-base font-black"
             hit={hit}
             color="red"
             attribute={"title"}
           />
         )}
-        {hit.desc && <p className="text-descText text-sm">{hit.desc}</p>}
+        {hit.desc && <p className="text-gray-600 text-sm">{hit.desc}</p>}
       </div>
     </div>
   );

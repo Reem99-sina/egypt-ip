@@ -169,7 +169,7 @@ export default {
   phoneFooter: "[رقم الهاتف]",
   termDesc:"قم بزيارة [الرابط] لقراءة الشروط والأحكام الكاملة للمشاركة",
   partnerHeader:"الشركاء",
-  filterBy: 'التصفية بواسطة',
+  filterBy: 'التصفيات',
   type:"النوع",
   applyFilter: 'تحديث التصنيف',
   participantHeader:"المشاركين",

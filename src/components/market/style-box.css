@@ -6,7 +6,7 @@
 
 .ais-SearchBox-input {
     width: 100%;
-    padding: 10px 5rem;
+    padding: 10px;
     border: 1px solid #E2E2E2;
     border-radius: 6px;
     font-size: 14px;
@@ -16,14 +16,20 @@
 .ais-SearchBox-submit {
     position: absolute;
     width: 2rem;
-    height: 2rem;
-    left: 1rem;
-    top: 0.4rem;
+    height: 100%;
+    left: 97%;
+    top: 0px;
     border-right: 1px solid #E2E2E2;
-    /*  */
-    /* Hide submit and reset buttons */
+    background-color:#1c4c9f;
+    padding: 8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
-
+.ais-Hits-list{
+    display: flex ;
+    align-items: center;
+    gap:16px;
+}
 .ais-SearchBox-reset {
     display: none;
 }

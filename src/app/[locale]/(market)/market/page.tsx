@@ -1,6 +1,5 @@
 "use client";
 import Hit from "@/components/market/hit";
-import { Button } from "@/components/shared/button.component";
 import { Line } from "@/components/shared/line.component";
 import SearchBoxCustom from "@/components/market/search-box-custom";
 import Pagination from "@/components/shared/pagination.component";
@@ -14,117 +13,99 @@ import {
   // Pagination,
   RefinementList,
   Stats,
-  // usePagination,
 } from "react-instantsearch";
+import { IoMenu } from "react-icons/io5";
+import { SlArrowRight, SlArrowLeft } from "@/icon";
+import FilterCustom from "@/components/market/filter-custom";
 
 const MarketPlace = () => {
   const [page, setPage] = useState(1);
-
+  const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   const client = AlgoliasearchConfig();
   useEffect(() => {
     client.saveObjects({ indexName: "item", objects: defaultData });
-    client.setSettings({indexName:"item",indexSettings:{
-      searchableAttributes: [
-        'category',
-        'title'
-      ],
-      attributesForFaceting:["searchable(category)"],
-      renderingContent: {
-        facetOrdering: {
-          facets: {
-            order: ['brand', 'size', 'color'],
-          },
-          values: {
-            brand: {
-              order: ['Uniqlo'],
-              sortRemainingBy: 'alpha',
+    client.setSettings({
+      indexName: "item",
+      indexSettings: {
+        searchableAttributes: ["category", "title"],
+        attributesForFaceting: ["searchable(category)"],
+        renderingContent: {
+          facetOrdering: {
+            facets: {
+              order: ["brand", "size", "color"],
             },
-            size: {
-              order: ['S', 'M', 'L', 'XL'],
-              sortRemainingBy: 'hidden',
+            values: {
+              brand: {
+                order: ["Uniqlo"],
+                sortRemainingBy: "alpha",
+              },
+              size: {
+                order: ["S", "M", "L", "XL"],
+                sortRemainingBy: "hidden",
+              },
             },
           },
         },
       },
-    }})
+    });
   }, []);
 
   return (
-    <div className="py-10 flex    container mx-auto gap-5">
+    <div className="container mx-auto">
       <InstantSearch indexName="item" searchClient={client}>
-        <div className="flex-[0.2] flex flex-col gap-3">
-          <h3 className="my-3 font-bold"> {t("filterBy")}</h3>
-          <Line />
-          {/* <DynamicWidgets> */}
-            <RefinementList
-              attribute="category"
-              searchable={false}
-              showMore={true}
-            />
-          {/* </DynamicWidgets> */}
-
-          {/* <FilterSection
-            title={t("type")}
-            optionKey={"_"}
-            options={[]}
-            onItemCheck={() => null}
-            selectedOptions={[]}
-            index={1}
-            renderOptionsSection={
-              <div className="my-4 flex flex-col items-start gap-4">
-                <div
-                  className="flex cursor-pointer flex-row items-center gap-2"
-                  onClick={() => {}}
-                >
-                  <Checkbox
-                    crossOrigin={undefined}
-                    className="accent-greenCustom"
-                    //   color="green"
-                    onChange={() => {}}
-                    checked={true}
-                  />
-                  <p className="text-sm font-bold text-[#7B8080]">
-                    {t("type")}
-                  </p>
-                </div>
-              </div>
-            }
-          /> */}
-        </div>
-        <div className="flex-1 flex flex-col gap-6">
-          <div className="flex items-center gap-2">
-            <div className="w-full">
-              <SearchBoxCustom
-                placeholder={t("search")}
-                onSubmit={() => {
-                 
-                }}
-              />
-            </div>
-            <div className="flex max-w-auto justify-end ">
-              <Button
-                className={clsx(
-                  "!ml-0 h-10 !w-auto flex-none gap-2 rounded-[4px] bg-blueCustom1 text-white !text-sm !px-4 !py-3 !font-black"
-                )}
-                type="submit"
-                text={t("search")}
-                onClick={() => {
-                  // router?.push("/account/personal-loan/add");
-                }}
-              />
+        <div className="py-10 flex gap-5 justify-start items-start ">
+          <div
+            className=" border rounded flex items-center  gap-4  px-2 cursor-pointer flex-[0.2] bg-blueCustom1 text-white"
+            onClick={() => setOpen(!open)}
+          >
+            <IoMenu />
+            <h3 className="my-2 font-bold"> {t("filterBy")}</h3>
+            <div className="ms-auto">
+              {open ? <SlArrowRight /> : <SlArrowLeft />}
             </div>
           </div>
-          <Line />
-          <Stats/>
-          <Hits hitComponent={Hit} />
-          <div>
-            <Pagination
-              pageCount={Math.ceil(10 / 5)}
-              initialPage={page}
-              className=""
-              onPageChange={(page) => setPage(page)}
-            />
+
+          <div className="flex-1 flex flex-col gap-6">
+            <div className="flex items-center gap-2">
+              <div className="w-full">
+                <SearchBoxCustom
+                  placeholder={t("search")}
+                  onSubmit={() => {}}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex gap-5 items-start  ">
+          {open ? (
+            <div className="flex items-center flex-[0.2]">
+              <div className={clsx(" flex flex-col gap-3 w-full")}>
+                <FilterCustom
+                  title="Category"
+                  styleHeader="text-sm font-black "
+                >
+                  <RefinementList
+                    attribute="category"
+                    searchable={false}
+                    showMore={true}
+                  />
+                </FilterCustom>
+              </div>
+            </div>
+          ) : null}
+          <div className=" flex flex-col gap-4 pb-3 flex-1">
+            <Line />
+            <Stats />
+            <Hits hitComponent={Hit} />
+            <div>
+              <Pagination
+                pageCount={Math.ceil(10 / 5)}
+                initialPage={page}
+                className=""
+                onPageChange={(page) => setPage(page)}
+              />
+            </div>
           </div>
         </div>
       </InstantSearch>

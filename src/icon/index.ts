@@ -17,6 +17,12 @@ import { GrSubtractCircle } from "react-icons/gr";
 import { RiVoiceRecognitionLine } from "react-icons/ri";
 import { CgMediaPodcast } from "react-icons/cg";
 import { FiPlusCircle } from "react-icons/fi";
+import {
+  SlArrowUp,
+  SlArrowDown,
+  SlArrowRight,
+  SlArrowLeft,
+} from "react-icons/sl";
 
 import {
   FaMoneyBill,
@@ -25,7 +31,12 @@ import {
   FaTwitter,
   FaFacebookSquare,
 } from "react-icons/fa";
-import { IoLocation,IoWaterOutline,IoEarthOutline } from "react-icons/io5";
+import {
+  IoLocation,
+  IoWaterOutline,
+  IoEarthOutline,
+  IoMenu,
+} from "react-icons/io5";
 import {
   MdOutlineEmail,
   MdEdit,
@@ -52,16 +63,16 @@ import Ainshams from "./ainshams.png";
 import Minia from "./minia.png";
 import Cairo from "./cairo.png";
 import Mansoura from "./mansoura.png";
-import Ai from "./aI.png"
-import Goverment from "./goverment.png"
-import IL from "./iL.avif"
-import IVC from "./IVC.jpeg"
-import BuildingBridges from "./BuildingBridges.jpg"
-import EnhancingImpact from "./enhancingImpact.jpg"
-import PromotingSustainability from "./PromotingSustainability.jpg"
-import FosteringInnovation from "./FosteringInnovation.png"
-import AmericanInternational from "./americanInternational.png"
-import BSC from "./BSC.jpg"
+import Ai from "./aI.png";
+import Goverment from "./goverment.png";
+import IL from "./iL.avif";
+import IVC from "./IVC.jpeg";
+import BuildingBridges from "./BuildingBridges.jpg";
+import EnhancingImpact from "./enhancingImpact.jpg";
+import PromotingSustainability from "./PromotingSustainability.jpg";
+import FosteringInnovation from "./FosteringInnovation.png";
+import AmericanInternational from "./americanInternational.png";
+import BSC from "./BSC.jpg";
 import { PiPlantFill } from "react-icons/pi";
 
 export {
@@ -114,5 +125,10 @@ export {
   FiPlusCircle,
   PiPlantFill,
   IoWaterOutline,
-  IoEarthOutline
+  IoEarthOutline,
+  IoMenu,
+  SlArrowUp,
+  SlArrowDown,
+  SlArrowRight,
+  SlArrowLeft,
 };
